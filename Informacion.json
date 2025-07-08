@@ -1,0 +1,3088 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "preguntas": ["hola", "buenos dias", "buenas tardes", "ola"],
+            "respuestas": ["<b>Hola</b> 🖖"]
+        },
+        {
+            "tag": "saludo_2",
+            "preguntas": ["como estas", "como te va", "como te ba", "que tal", "como andas", "que hay"],
+            "respuestas": ["<b>Bien</b> 😊", "<b>Todo bien</b> 😊"]
+        },
+        {
+            "tag": "despedida",
+            "preguntas": [
+                "adios", 
+                "a dios",
+                "asta luego",
+                "hasta luego", 
+                "nos vemos", 
+                "bye",
+                "hasta la proxima",
+                "hasta pronto",
+                "cuídate",
+                "cuídate mucho",
+                "saludos",
+                "saludos a todos",
+                "saludos a tu familia"
+            ],
+            "respuestas": ["¡Hasta luego! <b>Si necesitas más ayuda</b>, no dudes en volver. ¡Cuídate! 🫂"]
+        },
+        {
+            "tag": "ubicacion",
+            "preguntas": [
+                "ubicacion", "uvicacion", "ubicaciones", "uvicaciones", "ubikacion",
+                "uvikacion", "ubikaciones", "uvikaciones", "ubicasion", "uvicasion",
+                "ubicasiones", "uvicasiones", "ubikasion", "uvikasion", "ubikasiones",
+                "uvikasiones", "ubican", "uvican", "ubicar", "uvicar", "llego", "yego", "llegamos", "yegamos",
+                "lugar", "lugares", "donde estan", "donde se encuentran", "donde se ubican"
+            ],
+            "respuestas": ["Nos ubicamos en <b>Blvd. Constitución S/N, Col. Jorge Almada, Culiacán, Sinaloa, México - C.P. 80200.</b>"]
+        },
+        {
+            "tag": "telefono",
+            "preguntas": [
+                "tel", "cel", "celular", "celulares", "contacto",
+                "contactos", "telefono", "telefonos", "llamo", "llamar", "llamando", "llamado", "llamados",
+                "llamadas", "llamada", "telefono", "telefonos", "telefono celular", "fijo",
+                "telefono fijo", "telefono de contacto", "contacto"
+            ],
+            "respuestas": [
+                "\nDespues de marcar este numero, puedes digitar el numero de extencion del area solicitada. Puedes ver todas las extenciones en un archivo externo."
+            ]
+        },
+        {
+            "tag": "aniversario",
+            "preguntas": [
+                "aniversario", "aniversarios", "anibersario", "anibersarios", "festeja",
+                "cumple anos", "compleanos", "cumple años", "cumpleaños", "anos",
+                "cumple", "años", "anos", "ano", "cuando es el aniversario"
+            ],
+            "respuestas": [
+                "<b>Aniversario del Hospital Pediátrico de Sinaloa.</b> \nEste se celebra cada 13 de septiembre, en conmemoración a la inauguración del Hospital Pediátrico de Sinaloa en 1980. Desde entonces, se ha consolidado como un centro de atención especializada para la niñez, brindando servicios médicos de calidad a pacientes de Sinaloa y regiones cercanas."
+            ]
+        },
+        {
+            "tag": "informacion_general",
+            "preguntas": [
+                "informacion", "informasion", "informaciones", "informasiones", "informa",
+                "info", "inf", "informacion general", "informasion general", "informaciones general",
+                "informasiones general", "informa general", "info general", "inf general", "dedican", "general"
+            ],
+            "respuestas": [
+                "<b>¿Qué es?</b> \nEl Hospital Pediátrico de Sinaloa es un centro médico especializado en la atención integral de niñas, niños y adolescentes, ofreciendo servicios de alta calidad en diversas especialidades médicas. <b>Si necesitas más información sobre algun servicio comunícate con nosotros</b>."
+            ]
+        },
+        {
+            "tag": "historia_hospital",
+            "preguntas": [
+                "fundo", "fundacion", "fundasion", "fundadores", "fundador",
+                "historia", "historias", "historial", "istoria", "istorias",
+                "istorial", "inicio", "inicios", "inisio", "inisios",
+                "origen", "origenes", "horigen", "horigenes", "propocito",
+                "propocitos", "proposito", "propositos"
+            ],
+            "respuestas": [
+                "<b>Aniversario del Hospital Pediátrico de Sinaloa.</b> \nLa atención pediátrica en México comenzó en los años veinte. En Sinaloa, el Hospital del Niño fue inaugurado en 1980 y en 1983 se convirtió en un organismo público descentralizado."
+            ]
+        },
+        {
+            "tag": "horarios",
+            "preguntas": [
+                "a que hora", "abierto", "avierto","abiertos", "aviertos", "abren", "avren", "serrado", "cerrado", "serrados", "cerrados",
+                "cierran", "sierran", "horarios", "horario", "orarios", "orario", "esta abierto", "esta cerrado", "a que hora abren", 
+                "a que hora cierran", "a que hora estan abiertos", "a que hora esta abierto", "a que hora es el horario",
+                "estan abiertos", "estan cerrados", "estan abiertos ahora", "estan cerrados ahora", "cuando abren",
+                "cuando cierran", "horario de atencion", "horario de apertura", "horario de cierre", "estan abiertos ahora", 
+                "estan cerrados ahora", "abierto ahora", "cerrado ahora", "abren ahora", "cierran ahora", "cuando abren hoy"
+            ],
+            "respuestas": [
+                "Ofrecemos atencion <b>las 24 horas</b> para urgencias.\nLos servicios de consulta externa tienen horarios establecidos según la especialidad. 🕑"
+            ]
+        },
+        {
+            "tag": "visitas",
+            "preguntas": [
+                "visitas", "visita", "visitan", "visitante", "visitantes",
+                "visito", "visitamos", "visitaron", "vicitas", "vicita",
+                "vicitan", "vicitante", "vicitantes", "vicito", "vicitamos",
+                "vicitaron", "bisitas", "bisita", "bisitan", "bisitante",
+                "bisitantes", "bisito", "bisitamos", "bisitaron", "bicitas",
+                "bicita", "bicitan", "bicitante", "bicitantes", "bicito",
+                "bicitamos", "bicitaron", "reunion", "reuniones", "reunir"
+            ],
+            "respuestas": [
+                "Algunos requisitos necesarios para no comprometer la seguridad del paciente al momento de visitarlo."
+            ]
+        },
+        {
+            "tag": "reglamento",
+            "preguntas": [
+                "reglamento", "reglamentos", "reglas", "regla", "seguridad",
+                "proteccion", "protecciones", "protecsion", "protecsiones"
+            ],
+            "respuestas": [
+                "Reglamento especializado para la correcta atención medica a los pacientes."
+            ]
+        },
+        {
+            "tag": "correo",
+            "preguntas": [
+                "correo", "correos", "coreo", "correoo", "corre electronico",
+                "correo electronico", "coreo electronico", "tienen correo", "tienen un correo", "tienen algun correo",
+                "tienen correo electronico", "donde tienen correo", "donde tienen correo electronico", "donde esta el correo", "cual es su correo",
+                "me puedes dar el correo", "cuentan con correo", "cuentan con correo electronico", "manejan correo", "manejan algun correo",
+                "manejan correo electronico", "hay correo", "hay algun correo", "hay correo electronico", "proporcionan correo",
+                "dan correo", "dan algun correo", "dan correo electronico", "usan correo", "usan correo electronico",
+                "correo hospital", "correo del hospital", "correo de contacto", "correo institucional", "correo oficial"
+            ],
+            "respuestas": [
+                "En el Hospital valoramos la comunicación con pacientes, familiares y visitantes. Si tienes dudas, sugerencias o comentarios, <b>contamos con un Correo Electrónico.</b>"
+            ]
+        },
+        {
+            "tag": "informacion_adicional",
+            "preguntas": [
+                "guarderia", "guarderias", "padres", "padre", "servicios",
+                "servicio", "serbicios", "serbicio", "adicionales", "adisionales",
+                "adicional", "adisional", "extra", "extras", "estra",
+                "estras", "alojamiento", "alojamientos", "alojar", "alojarnos",
+                "familia", "familias", "familiares", "programa", "programas"
+            ],
+            "respuestas": [
+                "El Hospital Pediátrico de Sinaloa ofrece programas de apoyo a los padres y alojamiento en casos específicos. <b>Si necesitas más información sobre algun servicio comunícate con nosotros</b>."
+            ]
+        },
+        {
+            "tag": "elevador",
+            "preguntas": [
+                "elevador", "elevadores", "elebador", "elebadores", "elvador",
+                "elvadores", "ascensor", "ascensores", "acensor", "acensores",
+                "asensor", "asensores", "piso", "pisos", "piso en hospital", "que piso es", "piso disponible",
+                "piso accesible", "numero de piso", "piso asignado", "ubicacion por piso"
+            ],
+            "respuestas": [
+                "El hospital cuenta con dos Elevadores ambos situados a la izquierda al ingresar por la puerta principal, ubicados junto a las escaleras de servicio. Estos permiten el acceso a todos los pisos."
+            ]
+        },
+        {
+            "tag": "consultas",
+            "preguntas": [
+                "cita",
+                "citas",
+                "sita",
+                "sitas",
+                "agendar cita",
+                "agendar una cita",
+                "consulta",
+                "consultas",
+                "consula",
+                "consulas"
+            ],
+            "respuestas": [
+                "<b>Citas y Consultas</b> \nEste servicio facilita la programación de tratamiento médicas, ya sea por primera vez o de seguimiento. Se brinda orientación sobre horarios, documentación requerida y disponibilidad de atención."
+            ]
+        },
+        {
+            "tag": "credencial_imss_bienestar",
+            "preguntas": [
+                "imsss", "imss", "ims","immsss", "immss", "imms", "immmsss", "immmss", "immms",
+                "insss", "inss", "ins", "innsss", "innss", "inns", "innnsss", "innnss", "innns",
+                "imss bienestar", "imss vienestar", "tarjeta", "tarjetas", "targeta", "targetas", "tramita", "tramitar", "credencial", "credensial",
+                "credencial imss", "credencial del imss", "credencial imss bienestar", "credencial del imss bienestar", "credensial",
+                "credensial imss", "credensial del imss", "credensial imss bienestar", "credensial del imss bienestar", "tarjeta imss",
+                "tarjeta imss bienestar"
+            ],
+            "respuestas": [
+                "<b>Credencial del Imss-Bienestar</b> \nEste es un documento que identifica a las personas afiliadas al programa y permite acceder a servicios médicos gratuitos. Facilita la comprobación de afiliación, agiliza trámites y mejora la organización de la atención en las unidades de salud."
+            ]
+        },
+        {
+            "tag": "donaciones",
+            "preguntas": [
+                "donaciones", "donasiones", "donasion", "donacion", "donativos",
+                "donar", "dona", "dono", "apoyo", "apollo",
+                "apoyos", "apollos", "apoyar", "apollar", "apoyando",
+                "apollando", "cabello", "cabeyo", "cavello", "caveyo", "ayuda", "ayudas"
+            ],
+            "respuestas": [
+                "Aquí se canaliza toda la información relacionada con donaciones, ya sean en <b>Especie</b>, de <b>Sangre</b> o de otro <b>Tipo</b>. Se brinda orientación sobre cómo participar, los requisitos y las formas seguras de contribuir. <b>Selecciona un tipo para saber más información</b>."
+            ]
+        },
+        {
+            "tag": "donacion_sangre",
+            "preguntas": [
+                "donar sangre", "donacion de sangre", "donasión de sangre", "dono sangre", "quiero donar sangre",
+                "donde donar sangre", "como puedo donar sangre", "informacion para donar sangre", "requisitos para donar sangre", "puedo donar sangre",
+                "centro de donacion", "donar en hospital",
+                "donar en el hospital", "quiero ir a donar", "me interesa donar sangre",
+                "quiero ayudar donando sangre", "dona sangre", "donar mi sangre", "donde puedo donar", "quiero donar ya",
+                "como es el proceso de donacion de sangre", "proceso para donar sangre", "puedo ir a donar sangre", "como funciona la donacion de sangre", "necesitan sangre",
+                "necesitan donadores", "necesitan donadores de sangre", "ayuda con sangre", "donador", "donadores",
+                "apoyar donando sangre", "quiero ser donador", "ser donador", "quiero registrarme para donar sangre", "quiero dar mi sangre",
+                "como ser donador de sangre", "necesitan mi sangre", "donde registrarse para donar sangre", "registro de donadores",
+                "donacion voluntaria", "donacion altruista", "sangre voluntaria", "quiero ser voluntario de sangre", "ayudar con mi sangre"
+            ],
+            "respuestas": [
+                "<b>Donación de Sangre</b> \nGracias por tu interés en salvar vidas. Puedes acudir al <b>Banco de Sangre</b> del Hospital Pediátrico de Sinaloa. Ahí te orientarán sobre los requisitos, horarios y el procedimiento para donar sangre de manera segura."
+            ]
+        },
+        {
+            "tag": "donacion_especie",
+            "preguntas": [
+                "donaciones en especie", "donacion en especie", "donasiones en especie", "donasion en especie", "quiero donar en especie",
+                "puedo donar cosas", "quiero donar cosas", "donar articulos", "donar objetos", "como donar en especie",
+                "quiero hacer una donacion en especie", "como hacer donacion en especie", "entregar donativos en especie", "donde entregar donaciones", "apoyo en especie",
+                "donacion de productos", "donar ropa", "donar juguetes", "donar insumos", "donar medicamento",
+                "puedo donar articulos", "puedo donar ropa"
+            ],
+            "respuestas": [
+                "<b>Donaciones en Especie</b> \nForma especial de apoyar al hospital, estas consisten en entregar artículos funcionales y en buen estado que ayuden a mejorar la atención médica y el entorno de nuestros pacientes."
+            ]
+        },
+        {
+            "tag": "fecha",
+            "preguntas": [
+                "fecha",
+                "dia",
+                "hoy",
+                "oy",
+                "que dia es",
+                "que dia es hoy"
+            ],
+            "respuestas": ["FECHA_ACTUAL"]
+        },
+        {
+            "tag": "logo",
+            "preguntas": [
+                "logo",
+                "logos", "labrada", "labradas", "tico"
+            ],
+            "respuestas": ["<b>Logo del Hospital Pediátrico de Sinaloa.</b> \nEste representa a un niño de Las Labradas, su nombre es Tico. Cuya imagen representará al hospital a lo largo de vida hospitalaria."]
+        },
+        {
+            "tag": "hora",
+            "preguntas": [
+                "que hora es", 
+                "dime la hora", 
+                "hora actual",
+                "horas",
+                "oras",
+                "hora",
+                "ora",
+                "tiempo"
+            ],
+            "respuestas": ["HORA_ACTUAL"]
+        },
+        {
+            "tag": "info_chatbot",
+            "preguntas": [
+                "esto",
+                "programa",
+                "chat",
+                "bot",
+                "vot",
+                "programacion",
+                "programasion"
+            ],
+            "respuestas": ["Este es un <b>Chat BOT</b> del Hospital Pediátrico de Sinaloa, diseñado para ayudarte a obtener información rápida y eficiente sobre nuestros servicios. Los temas principales son:\n- Ubicación\n- Horarios de atención\n- Especialidades médicas\n- Información sobre el hospital\n- Contacto y teléfonos\n- Donaciones\n- Farmacia"]
+        },
+        {
+            "tag": "pagina_web",
+            "preguntas": [
+                "sitio", "citio", "sitios", "citios", "pagina", "paginas", "web", "www", "com"
+            ],
+            "respuestas": [
+                "Contamos con una página web oficial donde podrás mantenerte al tanto de nuestras últimas noticias, actividades, campañas y todo lo nuevo que sucede en el hospital.\n<b>¡Te invitamos a visitarla y mantenerte informado!</b>"
+            ]
+        },
+        {
+            "tag": "redes_sociales",
+            "preguntas": [
+                "redes", "redes sociales", "sociales", "social", "sosiales",
+                "sosial", "facebook", "feisbuk", "facebok", "fcbk",
+                "fb", "instagram", "insta", "instangram", "instagrm",
+                "ig", "tiktok", "tik tok", "tic toc", "tikto",
+                "toktik", "youtube", "yutube", "utub", "you tube",
+                "twitter", "twiter", "tuiter", "x", "x com"
+
+            ],
+            "respuestas": ["Puedes seguirnos en nuestras redes sociales oficiales para estar al tanto de noticias, eventos y consejos de salud."]
+        },
+        {
+            "tag": "extensiones",
+            "preguntas": [
+                "extension", "extencion", "extensiones", "extenciones", "estension",
+                "estencion", "estensiones", "estenciones", "telefono con extension", "telefono y extension",
+                "telefono con extencion", "telefono y extencion"
+            ],
+            "respuestas": [
+                "<b>Extensiones Disponibles</b> \nPuedes marcar el número principal del hospital y luego ingresar la extensión deseada para comunicarte con el área específica."
+            ]
+        },
+        {
+            "tag": "gracias",
+            "preguntas": [
+                "gracias",
+                "gracia",
+                "grasias",
+                "grasia",
+                "muchas gracias", 
+                "te agradezco", 
+                "mil gracias",
+                "gracias por tu ayuda",
+                "gracias por la informacion",
+                "gracias por ayudarme",
+                "gracias por tu apoyo",
+                "gracias por tu tiempo"
+            ],
+            "respuestas": ["¡De nada! Estoy aquí para ayudarte."]
+        },
+        {
+            "tag": "valores",
+            "preguntas": [
+                "vslor", "balor", "valores", "balores",
+                "donde esta el valor", "donde esta el balor", "donde puedo ver los valores", "donde tienen los balores", "tienen valor",
+                "tienen balor", "tienen los valores", "tienen los balores", "tienen algun valor", "tienen algun balor",
+                "hay valor", "hay balor", "hay valores", "hay balores", "hay algun valor",
+                "dan valor", "dan balor", "dan valores", "dan balores", "me pueden dar el valor",
+                "me pueden dar el balor", "cuanto es el valor", "cuanto es el balor", "cual es el valor", "cual es el balor",
+                "valores disponibles", "balores disponibles", "valores de servicios", "balores de servicios", "valor del medicamento",
+                "balor del medicamento", "valor de la atencion", "balor de la atencion", "valores consulta", "balores consulta"
+            ],
+            "respuestas": [
+                "<b>Valores del Hospital Pediátrico de Sinaloa</b> \nPromovemos el trabajo en equipo como base para alcanzar metas comunes, fomentamos el profesionalismo mediante un servicio de calidad, compromiso social y amor por lo que hacemos, y practicamos la honestidad como principio fundamental para actuar con integridad y disposición al cambio en beneficio de nuestros pacientes y la sociedad."
+            ]
+        },
+        {
+            "tag": "mision_vision",
+            "preguntas": [
+                "mision y vision", "mision", "vision", "micion", "vicion",
+                "misiones", "visiones", "miciones", "viciones",
+                "mision del hospital", "vision del hospital", "micion del hospital", "vicion del hospital", "mision y vision del hospital",
+                "misiones y visiones", "miciones y visiones", "misiones y viciones", "miciones y viciones"
+            ],
+            "respuestas": [
+                "<b>Misión:</b> Brindar atención médica especializada y ética a la población infantil, con calidez humana y compromiso social."
+            ]
+        },
+        {
+            "tag": "alianza_estrategica",
+            "preguntas": [
+                "alianza, alianzas, aliana, alianasa, aliansa",
+                "aliansas, aliansaas, alianssa, aliansa estrategica, estrategica",
+                "estrategicas, estratejica, estratejikas, estrategika, estrategikaz",
+                "estratejika, estrategikass, estratejicaz, estrategia, estrategias",
+                "estategica, estategikas, estartejika, estrtegica, estrategik",
+                "estratejico, estrategico, estrategicos", "7004", "004", "04",
+
+                "herrera",
+                "jesus",
+                "jesus francisco",
+                "jesus fransisco",
+                "francisco jesus",
+                "jesus herrera",
+                "francisco herrera",
+                "jesus martinez",
+                "francisco martinez",
+                "herrera jesus",
+                "herrera francisco",
+                "martinez jesus",
+                "martinez francisco",
+                "jesus francisco herrera",
+                "francisco herrera martinez",
+                "herrera martinez",
+                "herrera martinez jesus",
+                "herrera martinez francisco",
+                "jesus f herrera",
+                "f herrera martinez",
+                "j f herrera martinez",
+                "jesus francisco herrera martinez",
+                "francisco jesus herrera martinez",
+                "herrera martinez jesus francisco",
+                "jesus f h martinez",
+                "j francisco herrera",
+                "j f herrera",
+                "lic jesus herrera",
+                "lic jesus herrera martinez",
+                "licenciado jesus francisco herrera martinez",
+                "contacto jesus francisco herrera",
+                "jesus herrera martinez hospital"
+
+            ],
+            "respuestas": [
+                
+                "Esta área se encarga de gestionar convenios, fortalecer la vinculación institucional y promover colaboraciones con organismos nacionales e internacionales en beneficio del hospital y sus pacientes."
+            ]
+        },
+        {
+            "tag": "almacen_general",
+            "preguntas": [
+                "general",
+                "almacen general",
+                "almacen general",
+                "almasengeneral",
+                "almasengeneral",
+
+                "olga",
+                "lucero",
+                "pimental",
+                "labrada",
+                "olga lucero",
+                "lucero olga",
+                "olga pimental",
+                "lucero pimental",
+                "olga labrada",
+                "lucero labrada",
+                "pimental labrada",
+                "labrada pimental",
+                "olga lucero pimental",
+                "olga lucero labrada",
+                "lucero pimental labrada",
+                "olga pimental labrada",
+                "lucero olga pimental",
+                "olga l pimental labrada",
+                "o l pimental labrada",
+                "c olga lucero pimental labrada",
+                "c olga pimental labrada",
+                "contacto olga lucero pimental",
+                "pimental labrada olga lucero"
+            ],
+            "respuestas": [
+                "Su función principal es garantizar la recepción, resguardo, control y distribución eficiente de insumos, medicamentos y materiales necesarios para el óptimo funcionamiento del hospital."
+            ]
+        },
+        {
+            "tag": "sub_almacen",
+            "preguntas": [
+                "sub", "sut", "almacen", "almasen", "sub almacen",
+                "sut almacen", "subalmacen", "sutalmacen", "sub almasen", "sut almasen",
+                "subalmasen", "sutalmasen", "7006", "006", "06",
+
+                "edgar",
+                "edmundo",
+                "samaniego",
+                "armenta",
+                "edgar edmundo",
+                "edmundo edgar",
+                "edgar samaniego",
+                "edmundo samaniego",
+                "edgar armenta",
+                "edmundo armenta",
+                "samaniego armenta",
+                "armenta samaniego",
+                "edgar edmundo samaniego",
+                "edgar edmundo armenta",
+                "edgar samaniego armenta",
+                "edgar edmundo samaniego armenta",
+                "samaniego armenta edgar edmundo",
+                "contacto edgar edmundo samaniego",
+                "edgar e samaniego",
+                "e samaniego armenta"
+            ],
+            "respuestas": [
+                "El subalmacén se encarga del manejo y distribución específica de ciertos insumos o áreas dentro del hospital. Para más detalles, consulta los canales oficiales del Hospital Pediátrico de Sinaloa."
+            ]
+        },        
+        {
+            "tag": "apoyo_nutricional",
+            "preguntas": [
+                "nutricional", "nutrisional", "nutricion", "nutrision", "nutricionista",
+                "nutrisionista", "nutriologo", "nutriologa", "nutriologos", "nutriologas",
+                "nutricionista", "7007", "007", "07",
+
+                "helen",
+                "gaxiola",
+                "lizarraga",
+                "lisarraga",
+                "helen gaxiola",
+                "gaxiola helen",
+                "helen lizarraga",
+                "gaxiola lizarraga",
+                "lizarraga gaxiola",
+                "helen gaxiola lizarraga",
+                "gaxiola lizarraga helen",
+                "lm helen gaxiola lizarraga",
+                "licenciada en nutricion helen gaxiola",
+                "contacto helen gaxiola lizarraga",
+                "gaxiola lizarraga helen",
+                "licenciada en nutricion"
+            ],
+            "respuestas": [
+                "Esta área es responsable de evaluar, planificar y supervisar la alimentación de los pacientes hospitalizados, garantizando que reciban una nutrición adecuada y personalizada de acuerdo a sus necesidades médicas. Además, colabora con otras áreas clínicas para apoyar el tratamiento y la recuperación de los pacientes."
+            ]
+        },
+        {
+            "tag": "archivo_clinico",
+            "preguntas": [
+                "archibo", "archivo", "archibos", "archivos", "clinico",
+                "expediente", "expedientes", "historial medico", "archivo del hospital", "archivo hospital",
+                "7008", "008", "08",
+
+                "dalia",
+                "ramirez",
+                "morales",
+                "dalia ramirez",
+                "ramirez dalia",
+                "dalia morales",
+                "ramirez morales",
+                "morales ramirez",
+                "dalia ramirez morales",
+                "ramirez morales dalia",
+                "lic dalia ramirez morales",
+                "licenciada dalia ramirez",
+                "contacto dalia ramirez morales",
+                "ramirez dalia morales",
+                "dalia r morales",
+                "d ramirez morales"
+            ],
+            "respuestas": [
+                "Esta área es responsable de organizar, custodiar y controlar el acceso a los expedientes clínicos de los pacientes, asegurando la confidencialidad, integridad y disponibilidad de la información médica."
+            ]
+        },
+        {
+            "tag": "biomedica_ingenieria",
+            "preguntas": [
+                "biomedica", "biomedico", "biomedicas", "biomedicos", "bio", "vio",
+                "biomedika", "viomedica", "viomedico", "viomedicas", "viomedicos", "inge", "ingenieria", "injenieria",
+                "inyenieria", "equipos medicos", "equipo medico", "equipo de medicos", "equipos de medicos",
+                "equipo de medicina", "equipos medicina", "equipo salud", "equipos salud",
+                "ingeniero", "ingeniera", "ingenieros", "ingenieras", "7011", "011", "11",
+
+                "baez",
+                "baes",
+                "vaes",
+                "vaez",
+                "vargas",
+                "vargaz",
+                "jorge luis",
+                "luis jorge",
+                "jorge baez",
+                "luis baez",
+                "jorge vargas",
+                "luis vargas",
+                "baez vargas",
+                "vargas baez",
+                "jorge luis baez",
+                "jorge luis vargas",
+                "luis baez vargas",
+                "jorge baez vargas",
+                "luis jorge baez",
+                "j l baez vargas",
+                "j luis baez vargas",
+                "ing jorge luis baez vargas",
+                "ing jorge baez vargas",
+                "ingeniero jorge luis baez",
+                "ingeniero jorge baez vargas",
+                "contacto jorge luis baez",
+                "baez vargas jorge luis"
+            ],
+            "respuestas": [
+                "Supervisan, mantienen y garantizan el funcionamiento óptimo del equipamiento médico utilizado en el hospital. Su labor es esencial para asegurar la disponibilidad, seguridad y eficacia de los dispositivos médicos utilizados en la atención a los pacientes."
+            ]
+        },
+        {
+            "tag": "calidad",
+            "preguntas": [
+                "calidad", "calidades", "calidad hospitalaria", "hospitalaria", "ospitalaria",
+                "calidad del hospital", "7012", "012", "12",
+
+                "fabiola",
+                "sanchez",
+                "mapula",
+                "fabiola sanchez",
+                "sanchez fabiola",
+                "fabiola mapula",
+                "sanchez mapula",
+                "mapula fabiola",
+                "mapula sanchez",
+                "fabiola sanchez mapula",
+                "sanchez fabiola mapula",
+                "mapula fabiola sanchez",
+                "f sanchez mapula",
+                "enf fabiola sanchez mapula",
+                "enfermera fabiola sanchez mapula",
+                "contacto fabiola sanchez",
+                "sanchez mapula fabiola"
+            ],
+            "respuestas": [
+                "Esta area se encarga de implementar y supervisar los sistemas de gestión de calidad en el hospital, asegurando que se cumplan los estándares y protocolos establecidos para brindar una atención segura y eficaz a los pacientes."
+            ]
+        },
+        {
+            "tag": "cardiologia",
+            "preguntas": [
+                "cardio", "cardios", "cardiologia", "cardiologo", "cardiologos",
+                "cardiologa", "cardiologas", "car", "corazon", "corazones",
+                "corason", "corasones", "cardiovascular", "cardiovasculares", "cardiobascular",
+                "cardiobasculares", "7013", "013", "13",
+
+                "quibrera",
+                "matienzo",
+                "matkiensa",
+                "jose antonio",
+                "antonio jose",
+                "jose quibrera",
+                "antonio quibrera",
+                "jose matienzo",
+                "antonio matienzo",
+                "quibrera matienzo",
+                "matienzo quibrera",
+                "jose antonio quibrera",
+                "jose antonio matienzo",
+                "antonio quibrera matienzo",
+                "jose quibrera matienzo",
+                "antonio jose quibrera",
+                "j a quibrera matienzo",
+                "j antonio quibrera matienzo",
+                "dr jose antonio quibrera matienzo",
+                "dr jose quibrera matienzo",
+                "doctor jose antonio quibrera",
+                "doctor jose quibrera matienzo",
+                "contacto jose antonio quibrera",
+                "quibrera matienzo jose antonio"
+            ],
+            "respuestas": [
+                "Esta area se enfoca en la prevención, diagnóstico y tratamiento de enfermedades del corazón en niñas, niños y adolescentes. Esta área médica aborda desde soplos cardíacos y arritmias hasta cardiopatías congénitas complejas, brindando atención especializada mediante estudios, seguimiento clínico y colaboración con otras áreas para garantizar el bienestar cardiovascular de los pacientes."
+            ]
+        },
+        {
+            "tag": "central_de_cuentas",
+            "preguntas": [
+                "central de cuentas", "central", "cuentas", "cuenta", "cuento",
+                "cuentos", "7014", "014", "14",
+
+                "vega",
+                "maria luisa",
+                "luisa maria",
+                "maria soto",
+                "luisa soto",
+                "maria vega",
+                "luisa vega",
+                "soto vega",
+                "vega soto",
+                "maria luisa soto",
+                "maria luisa vega",
+                "luisa soto vega",
+                "maria soto vega",
+                "lic maria luisa soto vega",
+                "licenciada maria luisa soto",
+                "soto vega maria luisa"
+            ],
+            "respuestas": [
+                "Área fundamental en el funcionamiento administrativo del hospital, ya que garantiza el adecuado registro y control de los servicios médicos prestados. Se encarga de validar, consolidar y cerrar las cuentas hospitalarias de los pacientes, asegurando que toda la información esté correctamente documentada para facilitar los procesos de facturación y egresos."
+            ]
+        },
+        {
+            "tag": "centro_mezclas",
+            "preguntas": [
+                "mezclas", "mezcla", "mesclas", "mescla", "centro de mezclas",
+                "centro mezclas", "centro", "sentro", "7015", "015", "15",
+
+                "deyalinda",
+                "velasco",
+                "vela",
+                "deyalinda velasco",
+                "velasco deyalinda",
+                "deyalinda vela",
+                "velasco vela",
+                "vela velasco",
+                "deyalinda velasco vela",
+                "velasco vela deyalinda",
+                "lic deyalinda velasco vela",
+                "licenciada deyalinda velasco",
+                "contacto deyalinda velasco vela",
+                "velasco vela deyalinda"
+            ],
+            "respuestas": [
+                "Área especializada encargada de preparar de manera segura y estéril las soluciones intravenosas, nutriciones parenterales y medicamentos que requieren condiciones específicas. Su función principal es asegurar que las mezclas cumplan con los estándares de calidad y seguridad, optimizando el tratamiento médico de los pacientes hospitalizados. "
+            ]
+        },
+        {
+            "tag": "ceye",
+            "preguntas": [
+                "zeye", "seye", "ceye", "zelle", "selle",
+                "celle", "zene", "sene", "cene", "7016",
+                "016", "16",
+
+                "esthela",
+                "estela",
+                "robles",
+                "uriarte",
+                "rosa esthela",
+                "esthela rosa",
+                "rosa robles",
+                "esthela robles",
+                "rosa uriarte",
+                "esthela uriarte",
+                "robles uriarte",
+                "uriarte robles",
+                "rosa esthela robles",
+                "rosa esthela uriarte",
+                "esthela robles uriarte",
+                "rosa robles uriarte",
+                "esthela rosa robles",
+                "r e robles uriarte",
+                "enf rosa esthela robles uriarte",
+                "enfermera rosa robles uriarte",
+                "enfermera rosa esthela robles",
+                "contacto rosa esthela robles",
+                "robles uriarte rosa esthela"
+            ],
+            "respuestas": [
+                "Central de Equipos y Esterilización. Área responsable de la limpieza, preparación, esterilización y distribución del material e instrumental médico quirúrgico que se utiliza en todo el hospital. Su labor garantiza condiciones de seguridad y asepsia en los procedimientos, previniendo infecciones y asegurando el bienestar de los pacientes. "
+            ]
+        },
+        {
+            "tag": "cirugia",
+            "preguntas": [
+                "cirugia", "sirugia", "cirujano", "sirujano", "cirugias",
+                "sirugias", "cirujanos", "sirujano", "cirugia oficina", "cirugia ofisina",
+                "sirugia oficina", "sirugia ofisina", "7017", "017", "17", "7018", "018", "18", "7126", "126",
+
+                "residentes cirugia", "residentes quirofano", "residentes qx", "cirugia residentes", "quirofano residentes",
+                "qx residentes", "residentes de cirugia", "residentes de quirofano", "residentes de qx", "residente cirugia",
+                "residente quirofano", "residente qx", "cirugia residente", "quirofano residente", "qx residente",
+                "residente de cirugia", "residente de quirofano", "residente de qx", "recidentes cirugia", "recidentes quirofano",
+                "recidentes qx", "cirugia recidentes", "quirofano recidentes", "qx recidentes", "recidentes de cirugia",
+                "recidentes de quirofano", "recidentes de qx", "recidente cirugia", "recidente quirofano", "recidente qx",
+                "cirugia recidente", "quirofano recidente", "qx recidente", "recidente de cirugia", "recidente de quirofano", "recidente de qx",
+                
+                "juan",
+                "tirado",
+                "juan manuel",
+                "manuel juan",
+                "juan zazueta",
+                "juan tirado",
+                "manuel zazueta",
+                "manuel tirado",
+                "zazueta tirado",
+                "tirado zazueta",
+                "juan manuel zazueta",
+                "juan manuel tirado",
+                "manuel juan zazueta",
+                "juan zazueta tirado",
+                "manuel zazueta tirado",
+                "j m zazueta tirado",
+                "dr juan manuel zazueta tirado",
+                "dr juan zazueta tirado",
+                "doctor juan manuel zazueta",
+                "doctor juan zazueta tirado",
+                "contacto juan manuel zazueta",
+                "zazueta tirado juan manuel"
+            ],
+            "respuestas": [
+                "Se encarga de realizar procedimientos quirúrgicos programados y de urgencia, brindando atención especializada a los pacientes pediátricos que requieren intervención médica. Su labor es fundamental para el diagnóstico, tratamiento y recuperación de diversas patologías. Acude directamente al área o consultar los canales oficiales del hospital."
+            ]
+        },
+        {
+            "tag": "clinica_heridas",
+            "preguntas": [
+                "clinica", "clinicas", "clinika", "clina", "clinca", "clinikaa",
+                "heridas", "herida", "eridas", "erida",
+                "lesiones", "cortes", "llagas", "ulceras", "lastimaduras",
+                "heridos", "herido", "eridos", "erido",
+                "traumatismos", "golpes", "contusiones", "raspones", "escoriaciones", "7019", "019", "19",
+                
+                "consuelo",
+                "chacon",
+                "zapien",
+                "sapien",
+                "maria consuelo",
+                "consuelo maria",
+                "maria chacon",
+                "consuelo chacon",
+                "maria zapien",
+                "consuelo zapien",
+                "chacon zapien",
+                "zapien chacon",
+                "maria consuelo chacon",
+                "maria consuelo zapien",
+                "consuelo chacon zapien",
+                "maria chacon zapien",
+                "consuelo maria chacon",
+                "m c chacon zapien",
+                "enf maria consuelo chacon zapien",
+                "enfermera maria consuelo chacon zapien",
+                "enfermera maria chacon zapien",
+                "contacto maria consuelo chacon",
+                "chacon zapien maria consuelo"
+            ],
+            "respuestas": [
+                "Esta área se especializa en la valoración, tratamiento y seguimiento de heridas agudas y crónicas en pacientes pediátricos, con el objetivo de acelerar su recuperación y prevenir complicaciones. Se trabaja con técnicas avanzadas y un enfoque integral."
+            ]
+        },
+        {
+            "tag": "cobranza",
+            "preguntas": [
+                "cobranza", "cobransa", "covranza", "cobranzaa", "cobranzaz",
+                "covransa", "cobro", "cobros", "cobrar", "cobrador",
+                "cobradora", "cobranzas", "cobrando", "cobrada", "cobrado",
+                "facturacion", "pago", "pagos", "deuda", "adeudo", "deudas",
+                "abono", "abonos", "cartera", "venta", "ventas",
+                "recaudacion", "morosidad", "gestion", "recuperacion", "recuperar", "recuperasion",
+
+                "gabriel",
+                "noriega",
+                "gabriel calderon",
+                "calderon gabriel",
+                "gabriel noriega",
+                "noriega gabriel",
+                "calderon noriega",
+                "noriega calderon",
+                "gabriel calderon noriega",
+                "calderon noriega gabriel",
+                "gabriel c calderon",
+                "g calderon",
+                "g noriega",
+                "g calderon noriega",
+                "gab calderon",
+                "gab noriega",
+                "gabriel cn",
+                "contacto gabriel calderon",
+                "calderon gabriel noriega"
+            ],
+            "respuestas": [
+                "El área de Cobranza se encarga de gestionar los pagos correspondientes a los servicios médicos brindados en el hospital. Aquí se reciben los pagos de s, estudios, procedimientos y otros servicios, además de brindar información relacionada con tarifas y métodos de pago."
+            ]
+        },
+        {
+            "tag": "cocina",
+            "preguntas": [
+                "cocina", "cosina", "cocinas", "cosinas", "comida",
+                "comidas", "comer", "comedor", "comedores", "comere",
+                "comeremos", "comimos", "cocinero", "cocinera", "cocineros",
+                "cocineras", "cosinero", "cosinera", "cosineros", "cosineras",
+                "7021", "021", "21",
+
+                "beatriz",
+                "beatriz elena",
+                "elena beatriz",
+                "beatriz ibarra",
+                "elena ibarra",
+                "beatriz yanez",
+                "elena yanez",
+                "ibarra yanez",
+                "yanez ibarra",
+                "beatriz elena ibarra",
+                "beatriz elena yanez",
+                "elena ibarra yanez",
+                "beatriz ibarra yanez",
+                "lic beatriz elena ibarra yanez",
+                "licenciada beatriz elena ibarra",
+                "ibarra yanez beatriz elena"
+            ],
+            "respuestas": [
+                "El área de Cocina es la encargada de preparar y distribuir los alimentos para los pacientes, personal médico y administrativo del hospital. Su labor es fundamental para garantizar una alimentación nutritiva, segura y adecuada a las necesidades médicas de cada paciente, siguiendo estrictos controles de higiene y calidad."
+            ]
+        },
+        {
+            "tag": "consulta_externa",
+            "preguntas": [
+                "consultas", "consulta", "externa", "externas", "esterna",
+                "esternas", "sterna", "sternas", "7023", "023", "23", "7120", "120",
+
+                "aleida",
+                "barajas",
+                "aleida lopez",
+                "lopez aleida",
+                "aleida barajas",
+                "lopez barajas",
+                "barajas lopez",
+                "aleida lopez barajas",
+                "lopez barajas aleida",
+                "dra aleida lopez barajas",
+                "doctora aleida lopez",
+                "contacto aleida lopez barajas",
+                "lopez barajas aleida"
+            ],
+            "respuestas": [
+                "Aquí se brinda atención médica especializada a pacientes pediátricos en un entorno ambulatorio, lo que permite recibir diagnóstico, tratamiento y seguimiento sin necesidad de hospitalización. Es una de las áreas clave para la detección temprana y el control de diversas enfermedades."
+            ]
+        },
+        {
+            "tag": "contabilidad_oficina",
+            "preguntas": [
+                "conta", "finan", "contabi", "contavi", "contabilidad",
+                "contavilidad", "contabilidad oficina", "contavilidad oficina", "contadora", "contador",
+                "contadores", "contadoras", "financiero", "financieros", "finansiero",
+                "finansieros", "7024", "024", "24",
+
+                "marlenne",
+                "karime",
+                "osuna",
+                "bolado",
+                "marlenne karime",
+                "karime marlenne",
+                "marlenne osuna",
+                "karime osuna",
+                "marlenne bolado",
+                "karime bolado",
+                "osuna bolado",
+                "bolado osuna",
+                "marlenne karime osuna",
+                "marlenne karime bolado",
+                "karime osuna bolado",
+                "marlenne osuna bolado",
+                "lic marlenne karime osuna bolado",
+                "licenciada marlenne karime osuna",
+                "osuna bolado marlenne karime"
+            ],
+            "respuestas": [
+                "La oficina de contabilidad es responsable de gestionar todo lo relacionado con pagos, facturación, recibos y control financiero del hospital. Puedes acudir para resolver dudas sobre trámites contables, solicitar recibos o consultar sobre cuentas por pagar o cobrar. Está disponible en horario de oficina y también puedes comunicarte por los canales oficiales."
+            ]
+        },
+        {
+            "tag": "contraloria_interna",
+            "preguntas": [
+                "transparencias", "transparensias", "transparencias", "transparensias", "transparencia",
+                "transparensia", "transparencia", "transparensia", "trasparencias", "trasparensias",
+                "trasparencias", "trasparensias", "trasparencia", "trasparensia", "trasparencia",
+                "trasparensia", "contraloria", "contralodaria", "contralodoria", "contraloduria",
+                "contralodiria", "contralaria", "contraladaria", "contraladoria", "contraladuria",
+                "contraladiria", "controloria", "controlodaria", "controlodoria", "controloduria",
+                "controlodiria", "controlaria", "controladaria", "controladoria", "controladuria",
+                "controladiria", "contralor", "contralores", "control interno", "control interno hospital",
+                "7025", "025", "25",
+
+                "nava",
+                "casta",
+                "maria soledad",
+                "soledad maria",
+                "maria nava",
+                "soledad nava",
+                "maria casta",
+                "soledad casta",
+                "nava casta",
+                "casta nava",
+                "maria soledad nava",
+                "maria soledad casta",
+                "soledad nava casta",
+                "maria nava casta",
+                "lic maria soledad nava casta",
+                "licenciada maria soledad nava"
+            ],
+            "respuestas": [
+                "Área encargada de supervisar, evaluar y dar seguimiento al uso correcto de los recursos y procesos institucionales, contribuyendo a la transparencia y el buen funcionamiento del hospital."
+            ]
+        },
+        {
+            "tag": "dental",
+            "preguntas": [
+                "estomatologia", "estomatologo", "estomatologos", "estomago", "estomagos",
+                "panza", "panzas", "pansa", "pansas", "esto",
+                "estoma", "odon", "odonto", "odontologo", "odontologos",
+                "odontologia", "odontopediatria", "ortodoncia", "ortodonsia", "dental",
+                "dentales", "dentista", "dentistas", "diente", "dientes",
+                "boca", "bocas", "voca", "vocas", "muela",
+                "muelas", "carie", "caries", "7026", "026", "26",
+
+                "raquel",
+                "marquez",
+                "raquel salazar",
+                "salazar raquel",
+                "raquel marquez",
+                "salazar marquez",
+                "marquez salazar",
+                "raquel salazar marquez",
+                "salazar raquel marquez",
+                "raquel marquez salazar",
+                "r salazar marquez",
+                "dra raquel salazar marquez",
+                "doctora raquel salazar marquez",
+                "dra raquel marquez",
+                "dra raquel salazar",
+                "contacto raquel salazar",
+                "salazar marquez raquel"
+            ],
+            "respuestas": [
+                "El área dental del hospital ofrece atención odontológica especializada para niños y adolescentes, incluyendo consultas, tratamientos preventivos y curativos, así como servicios de Estomatología y Ortodoncia. Puedes acudir para programar una cita o recibir orientación sobre salud bucal. "
+            ]
+        },
+        {
+            "tag": "enfermeria_ensenanza",
+            "preguntas": [
+                "enfermeria ensenanza", "enfermeria ensenanzas", "enfermeria ensenansa", "enfermeria ensenansas", "ensenanza enfermeria",
+                "ensenanzas enfermeria", "ensenansa enfermeria", "ensenansas enfermeria", "enfer ensenanza", "enfer ensenanzas",
+                "enfer ensenansa", "enfer ensenansas", "ensenanza enfer", "ensenanzas enfer", "ensenansa enfer",
+                "ensenansas enfer", "enferme ensenanza", "enferme ensenanzas", "enferme ensenansa", "enferme ensenansas",
+                "ensenanza enferme", "ensenanzas enferme", "ensenansa enferme", "ensenansas enferme", "enfermeria enseñanza",
+                "enfermeria enseñanzas", "enfermeria enseñansa", "enfermeria enseñansas", "enseñanza enfermeria", "enseñanzas enfermeria",
+                "enseñansa enfermeria", "enseñansas enfermeria", "enfer enseñanza", "enfer enseñanzas", "enfer enseñansa",
+                "enfer enseñansas", "enseñanza enfer", "enseñanzas enfer", "enseñansa enfer", "enseñansas enfer",
+                "enferme enseñanza", "enferme enseñanzas", "enferme enseñansa", "enferme enseñansas", "enseñanza enferme",
+                "enseñanzas enferme", "enseñansa enferme", "enseñansas enferme", "enfermeria ense", "ense enfermeria",
+                "enfer ense", "ense enfer", "enferme ense", "ense enferme", "enfermeria ensena",
+                "ensena enfermeria", "enfer ensena", "ensena enfer", "enferme ensena", "ensena enferme",
+                "enfermeria enseña", "enseña enfermeria", "enfer enseña", "enseña enfer", "enferme enseña",
+                "enseña enferme", "enfermeria encenanza", "enfermeria encenanzas", "enfermeria encenansa", "enfermeria encenansas",
+                "encenanza enfermeria", "encenanzas enfermeria", "encenansa enfermeria", "encenansas enfermeria", "enfer encenanza",
+                "enfer encenanzas", "enfer encenansa", "enfer encenansas", "encenanza enfer", "encenanzas enfer",
+                "encenansa enfer", "encenansas enfer", "enferme encenanza", "enferme encenanzas", "enferme encenansa",
+                "enferme encenansas", "encenanza enferme", "encenanzas enferme", "encenansa enferme", "encenansas enferme",
+                "enfermeria enceñanza", "enfermeria enceñanzas", "enfermeria enceñansa", "enfermeria enceñansas", "enceñanza enfermeria",
+                "enceñanzas enfermeria", "enceñansa enfermeria", "enceñansas enfermeria", "enfer enceñanza", "enfer enceñanzas",
+                "enfer enceñansa", "enfer enceñansas", "enceñanza enfer", "enceñanzas enfer", "enceñansa enfer",
+                "enceñansas enfer", "enferme enceñanza", "enferme enceñanzas", "enferme enceñansa", "enferme enceñansas",
+                "enceñanza enferme", "enceñanzas enferme", "enceñansa enferme", "enceñansas enferme", "enfermeria ence",
+                "ence enfermeria", "enfer ence", "ence enfer", "enferme ence", "ence enferme",
+                "enfermeria encena", "encena enfermeria", "enfer encena", "encena enfer", "enferme encena",
+                "encena enferme", "enfermeria enceña", "enceña enfermeria", "enfer enceña", "enceña enfer",
+                "enferme enceña", "enceña enferme", "7029", "029", "29",
+
+                "alba",
+                "berenice",
+                "madueno",
+                "madueño",
+                "madrigal",
+                "alba berenice",
+                "berenice alba",
+                "alba madueno",
+                "berenice madueno",
+                "alba madrigal",
+                "berenice madrigal",
+                "madueno madrigal",
+                "madrigal madueno",
+                "alba berenice madueno",
+                "alba berenice madrigal",
+                "berenice madueno madrigal",
+                "alba madueno madrigal",
+                "berenice alba madueno",
+                "a b madueno madrigal",
+                "enf alba berenice madueno madrigal",
+                "enfermera alba berenice madueno madrigal",
+                "enfermera alba madueno",
+                "contacto alba berenice madueno",
+                "madueno madrigal alba berenice"
+            ],
+            "respuestas": [
+                "Esta área se encarga de la capacitación, actualización y formación continua del personal de enfermería. Aquí se coordinan programas educativos, talleres y actividades académicas para fortalecer las competencias profesionales del personal."
+            ]
+        },
+        {
+            "tag": "enfermeria_jefatura",
+            "preguntas": [
+                "enfermeria jefatura", "enfermeria de jefatura", "enfermeria jefa", "enfermeria de jefa", "jefatura enfermeria",
+                "jefatura de enfermeria", "jefa enfermeria", "jefa de enfermeria", "enf jefatura", "enf de jefatura",
+                "enf jefa", "enf de jefa", "jefatura enf", "jefatura de enf", "jefa enf",
+                "jefa de enf", "enferme jefatura", "enferme de jefatura", "enferme jefa", "enferme de jefa",
+                "jefatura enferme", "jefatura de enferme", "jefa enferme", "jefa de enferme", "7030", "030", "30", "7031", "031", "31"
+            ],
+            "respuestas": [
+                "Área encargada de coordinar, supervisar y organizar al personal de enfermería en todas las áreas del hospital. Su función principal es garantizar una atención segura, eficiente y de calidad para los pacientes. También se encarga de establecer lineamientos, horarios y asignaciones del personal."
+            ]
+        },
+        {
+            "tag": "enfermeria_subjefatura",
+            "preguntas": [
+                "enfermeria subjefatura", "enfermeria subjefaturas", "enfermeria sub jefatura", "enfermeria sub jefaturas", "enfermeria subjefa",
+                "enfermeria sub jefa", "subjefatura enfermeria", "subjefaturas enfermeria", "sub jefatura enfermeria", "sub jefaturas enfermeria",
+                "subjefa enfermeria", "sub jefa enfermeria", "7032", "032", "32"
+            ],
+            "respuestas": [
+                "Esta área se encarga de apoyar en la supervisión, organización y gestión del personal de enfermería, trabajando en conjunto con la jefatura para asegurar el cumplimiento de los estándares de atención y operatividad en los diferentes servicios."
+            ]
+        },
+        {
+            "tag": "ensenanza_medica",
+            "preguntas": [
+                "ensenanza", "ensenanzas", "ensenansa", "ensenansas", "enseñanza",
+                "enseñanzas", "enseñansa", "enseñansas", "ense", "encenanza",
+                "encenanzas", "encenansa", "encenansas", "enceñanza", "enceñanzas",
+                "enceñansa", "enceñansas", "ence",
+
+                "paez",
+                "alberto paez",
+                "paez alberto",
+                "alberto salazar",
+                "paez salazar",
+                "salazar paez",
+                "alberto paez salazar",
+                "alberto salazar paez",
+                "paez salazar alberto",
+                "a paez salazar",
+                "dr alberto paez salazar",
+                "doctor alberto paez",
+                "doctor alberto salazar",
+                "dr alberto salazar paez",
+                "contacto alberto paez",
+                "salazar alberto paez"
+            ],
+            "respuestas": [
+                "Aqui se coordinan las actividades académicas y formativas del personal en formación, así como de mantener vínculos con instituciones educativas para la capacitación continua en el ámbito de la salud. <b>Selecciona un área para saber más información</b>."
+            ]
+        },
+        {
+            "tag": "ensenanza_dos",
+            "preguntas": [
+                "ensenanza dos", "encenanza dos", "ensenansa dos", "encenansa dos", "ensenanza doz", "encenanza doz", "ensenansa doz", "encenansa doz", "ensenanza 2", "encenanza 2",
+                "ensenansa 2", "encenansa 2", "dos", "doz", "7033", "033", "33"
+            ],
+            "respuestas": [
+                "Esta área se encarga de coordinar y administrar los programas educativos y de formación para el personal, enfocándose en la actualización y capacitación continua. También gestiona los cursos y talleres de enseñanza dentro del hospital."
+            ]
+        },
+        {
+            "tag": "ensenanza_investigacion",
+            "preguntas": [
+                "ensenanza investigacion", "ensenanzas investigacion", "ensenansa investigacion", "ensenansas investigacion", "enseñanza investigacion",
+                "enseñanzas investigacion", "enseñansa investigacion", "enseñansas investigacion", "ense investigacion", "encenanza investigacion",
+                "encenanzas investigacion", "encenansa investigacion", "encenansas investigacion", "enceñanza investigacion", "enceñanzas investigacion",
+                "enceñansa investigacion", "enceñansas investigacion", "ence investigacion", "ensenanza investigasion", "ensenanzas investigasion",
+                "ensenansa investigasion", "ensenansas investigasion", "enseñanza investigasion", "enseñanzas investigasion", "enseñansa investigasion",
+                "enseñansas investigasion", "ense investigasion", "encenanza investigasion", "encenanzas investigasion", "encenansa investigasion",
+                "encenansas investigasion", "enceñanza investigasion", "enceñanzas investigasion", "enceñansa investigasion", "enceñansas investigasion",
+                "ence investigasion", "investigacion ensenanza", "investigacion ensenanzas", "investigacion ensenansa", "investigacion ensenansas",
+                "investigacion enseñanza", "investigacion enseñanzas", "investigacion enseñansa", "investigacion enseñansas", "investigacion ense",
+                "investigacion encenanza", "investigacion encenanzas", "investigacion encenansa", "investigacion encenansas", "investigacion enceñanza",
+                "investigacion enceñanzas", "investigacion enceñansa", "investigacion enceñansas", "investigacion ence", "investigasion ensenanza",
+                "investigasion ensenanzas", "investigasion ensenansa", "investigasion ensenansas", "investigasion enseñanza", "investigasion enseñanzas",
+                "investigasion enseñansa", "investigasion enseñansas", "investigasion ense", "investigasion encenanza", "investigasion encenanzas",
+                "investigasion encenansa", "investigasion encenansas", "investigasion enceñanza", "investigasion enceñanzas", "investigasion enceñansa",
+                "investigasion enceñansas", "investigasion ence", "7034", "034", "34"
+            ],
+            "respuestas": [
+                "Este sector se dedica a promover la formación académica y el desarrollo de proyectos científicos dentro del hospital. Es un área clave para la capacitación del personal de salud y la mejora continua de la atención médica."
+            ]
+        },
+        {
+            "tag": "ensenanza_medica_jefe",
+            "preguntas": [
+                "ensenanza medica jefe", "ensenansa medica jefe", "ensenanzas medica jefe", "ensenansas medica jefe", "ense medica jefe",
+                "enseñanza medica jefe", "enseñansa medica jefe", "enseñanzas medica jefe", "enseñansas medica jefe", "ense medica jefe",
+                "encenanza medica jefe", "encenansa medica jefe", "encenanzas medica jefe", "encenansas medica jefe", "ence medica jefe",
+                "enceñanza medica jefe", "enceñansa medica jefe", "enceñanzas medica jefe", "enceñansas medica jefe", "ence medica jefe",
+                "medica enseñanza jefe", "medica ensenanza jefe", "medica enseñansa jefe", "medica enseñanzas jefe", "medica ensenansas jefe",
+                "jefe enseñanza medica", "jefe ensenanza medica", "jefe enseñansa medica", "jefe enseñanzas medica", "jefe ensenansas medica",
+                "jefe ense medica", "jefe encenanza medica", "jefe encenansas medica", "jefe enceñanza medica", "jefe ence medica",
+                "ensenanza jefe medica", "ensenansas jefe medica", "enseñanza jefe medica", "enseñansas jefe medica", "encenanza jefe medica",
+                "enceñanza jefe medica", "medica jefe enseñanza", "medica jefe ensenanza", "medica jefe enseñansa", "medica jefe ense", 
+                "jefe medica enseñanza", "jefe medica ensenanza", "jefe medica enseñansa", "jefe medica ense", "7035", "035", "35"
+
+            ],
+            "respuestas": [
+                "Esta unidad coordina y supervisa los procesos académicos relacionados con la formación médica dentro del hospital. Es responsable de planificar, evaluar y dirigir las actividades educativas del personal en formación."
+            ]
+        },
+        {
+            "tag": "secretaria_ensenanza_medica",
+            "preguntas": [
+                "ensenanza medica secretaria", "ensenansas medica secretaria", "ensenansas medica secretaria", "ensenansa medica secretaria", "ense medica secretaria",
+                "enseñanza medica secretaria", "enseñansas medica secretaria", "enseñansa medica secretaria", "enseñanzas medica secretaria", "ense medica secretaria",
+                "encenanza medica secretaria", "encenansas medica secretaria", "encenansa medica secretaria", "encenanzas medica secretaria", "ence medica secretaria",
+                "enceñanza medica secretaria", "enceñansas medica secretaria", "enceñansa medica secretaria", "enceñanzas medica secretaria", "ence medica secretaria",
+                "medica enseñanza secretaria", "medica ensenanza secretaria", "medica enseñansa secretaria", "medica enseñanzas secretaria", "medica ensenansas secretaria",
+                "secretaria enseñanza medica", "secretaria ensenanza medica", "secretaria enseñansa medica", "secretaria enseñanzas medica", "secretaria ensenansas medica",
+                "secretaria ense medica", "secretaria encenanza medica", "secretaria encenansas medica", "secretaria enceñanza medica", "secretaria ence medica",
+                "ensenanza secretaria medica", "ensenansas secretaria medica", "enseñanza secretaria medica", "enseñansas secretaria medica", "encenanza secretaria medica",
+                "enceñanza secretaria medica", "medica secretaria enseñanza", "medica secretaria ensenanza", "medica secretaria enseñansa", "medica secretaria ense",
+                "secretaria medica enseñanza", "secretaria medica ensenanza", "secretaria medica enseñansa", "secretaria medica ense", "7036", "036", "36"
+
+            ],
+            "respuestas": [
+                "Esta oficina brinda apoyo administrativo a las actividades académicas y de capacitación médica. Facilita la gestión de documentos, inscripciones y coordinación con instituciones educativas externas."
+            ]
+        },
+        {
+            "tag": "medicina_basada_evidencias",
+            "preguntas": [
+                "ensenanza medicina basada en evidencia", "ensenanza medicina basada en evidencias", "ensenanza medisina basada en evidencia", "ensenanza medisina basada en evidencias", "ensenanza medicina vasada en evidencia", "ensenanza medicina vasada en evidencias", "ensenanza medisina vasada en evidencia", "ensenanza medisina vasada en evidencias", "ensenanza medicina basada en ebidencia", "ensenanza medicina basada en ebidencias",
+                "ensenanza medisina basada en ebidencia", "ensenanza medisina basada en ebidencias", "ensenanza medicina vasada en ebidencia", "ensenanza medicina vasada en ebidencias", "ensenanza medisina vasada en ebidencia", "ensenanza medisina vasada en ebidensias", "ensenanza medicina basada en evidensia", "ensenanza medicina basada en evidensias", "ensenanza medisina basada en evidensia", "ensenanza medisina basada en evidensias",
+                "ensenanza medicina vasada en evidensia", "ensenanza medicina vasada en evidensias", "ensenanza medisina vasada en evidensia", "ensenanza medisina vasada en evidensias", "ensenanza medicina basada en ebidensia", "ensenanza medicina basada en ebidensias", "ensenanza medisina basada en ebidensia", "ensenanza medisina basada en ebidensias", "ensenanza medicina vasada en ebidensia", "ensenanza medicina vasada en ebidensias",
+                "ensenanza medisina vasada en ebidensia", "ensenanza medisina vasada en ebidensias", "encenanza medicina basada en evidencia", "encenanza medicina basada en evidencias", "encenanza medisina basada en evidencia", "encenanza medisina basada en evidencias", "encenanza medicina vasada en evidencia", "encenanza medicina vasada en evidencias", "encenanza medisina vasada en evidencia", "encenanza medisina vasada en evidencias",
+                "encenanza medicina basada en ebidencia", "encenanza medicina basada en ebidencias", "encenanza medisina basada en ebidencia", "encenanza medisina basada en ebidencias", "encenanza medicina vasada en ebidencia", "encenanza medicina vasada en ebidencias", "encenanza medisina vasada en ebidencia", "encenanza medisina vasada en ebidencias", "encenanza medicina basada en evidensia", "encenanza medicina basada en evidensias",
+                "encenanza medisina basada en evidensia", "encenanza medisina basada en evidensias", "encenanza medicina vasada en evidensia", "encenanza medicina vasada en evidensias", "encenanza medisina vasada en evidensia", "encenanza medisina vasada en evidensias", "encenanza medicina basada en ebidensia", "encenanza medicina basada en ebidensias", "encenanza medisina basada en ebidensia", "encenanza medisina basada en ebidensias",
+                "encenanza medicina vasada en ebidensia", "encenanza medicina vasada en ebidensias", "encenanza medisina vasada en ebidensia", "encenanza medisina vasada en ebidensias", "ensenansa medicina basada en evidencia", "ensenansa medicina basada en evidencias", "ensenansa medisina basada en evidencia", "ensenansa medisina basada en evidencias", "ensenansa medicina vasada en evidencia", "ensenansa medicina vasada en evidencias",
+                "ensenansa medisina vasada en evidencia", "ensenansa medisina vasada en evidencias", "ensenansa medicina basada en ebidencia", "ensenansa medicina basada en ebidencias", "ensenansa medisina basada en ebidencia", "ensenansa medisina basada en ebidencias", "ensenansa medicina vasada en ebidencia", "ensenansa medicina vasada en ebidencias", "ensenansa medisina vasada en ebidencia", "ensenansa medisina vasada en ebidensias",
+                "ensenansa medicina basada en evidensia", "ensenansa medicina basada en evidensias", "ensenansa medisina basada en evidensia", "ensenansa medisina basada en evidensias", "ensenansa medicina vasada en evidensia", "ensenansa medicina vasada en evidensias", "ensenansa medisina vasada en evidensia", "ensenansa medisina vasada en evidensias", "ensenansa medicina basada en ebidensia", "ensenansa medicina basada en ebidensias",
+                "ensenansa medisina basada en ebidensia", "ensenansa medisina basada en ebidensias", "ensenansa medicina vasada en ebidensia", "ensenansa medicina vasada en ebidensias", "ensenansa medisina vasada en ebidensia", "ensenansa medisina vasada en ebidensias", "encenansa medicina basada en evidencia", "encenansa medicina basada en evidencias", "encenansa medisina basada en evidencia", "encenansa medisina basada en evidencias",
+                "encenansa medicina vasada en evidencia", "encenansa medicina vasada en evidencias", "encenansa medisina vasada en evidencia", "encenansa medisina vasada en evidencias", "encenansa medicina basada en ebidencia", "encenansa medicina basada en ebidencias", "encenansa medisina basada en ebidencia", "encenansa medisina basada en ebidencias", "encenansa medicina vasada en ebidencia", "encenansa medicina vasada en ebidencias",
+                "encenansa medisina vasada en ebidencia", "encenansa medisina vasada en ebidencias", "encenansa medicina basada en evidensia", "encenansa medicina basada en evidensias", "encenansa medisina basada en evidensia", "encenansa medisina basada en evidensias", "encenansa medicina vasada en evidensia", "encenansa medicina vasada en evidensias", "encenansa medisina vasada en evidensia", "encenansa medisina vasada en evidensias",
+                "encenansa medicina basada en ebidensia", "encenansa medicina basada en ebidensias", "encenansa medisina basada en ebidensia", "encenansa medisina basada en ebidensias", "encenansa medicina vasada en ebidensia", "encenansa medicina vasada en ebidensias", "encenansa medisina vasada en ebidensia", "encenansa medisina vasada en ebidensias", 
+                "evidencias", "evidencia", "ebidencias", "ebidencia", "evidensias", "evidensia", "hevidencias", "hevidencia", "evidencis", "evidensias", "7037", "037", "37"
+            ],
+            "respuestas": [
+                "Este espacio se enfoca en la integración de la mejor evidencia científica disponible en la toma de decisiones clínicas. Promueve prácticas médicas actualizadas, seguras y eficaces para el beneficio de los pacientes."
+            ]
+        },
+        {
+            "tag": "epidemiologia",
+            "preguntas": [
+                "epi", "epide", "epidemo", "epidemio", "epidemiologica", "epidemiologicas",
+                "epidemiologia", "epidemiologias", "epidemologia", "epidemologias", "epidemiologos",
+                "epidemiologo", "epidemiologas", "epidemiologa", "7040", "040", "40",
+
+                "rosalino",
+                "rocha",
+                "rosalino flores",
+                "flores rosalino",
+                "rosalino rocha",
+                "flores rocha",
+                "rocha flores",
+                "rosalino flores rocha",
+                "flores rocha rosalino",
+                "rosalino rocha flores",
+                "r flores rocha",
+                "ep rosalino flores rocha",
+                "ep rosalino flores",
+                "ep rosalino rocha",
+                "rosalino flores ep",
+                "contacto rosalino flores",
+                "flores rocha ep rosalino"
+            ],
+            "respuestas": [
+                "Se encarga de la vigilancia, prevención y control de enfermedades, así como del análisis de datos para la toma de decisiones en salud pública dentro del hospital."
+            ]
+        },
+        {
+            "tag": "farmacia",
+            "preguntas": [
+                "surten", "surte", "surtidos", "surtido", "farmasia", "farmasias",
+                "farmacia", "farmacias", "farmasias", "farmazias", "farmaciaa", "7041", "041", "41", "7042", "042", "42",
+                "farmazia", "medicamentos", "medicamento", "medicinas", "medisinas", "farmacologo", "farmacologos", "farmacologa", "farmacologas",
+                "donde surten medicamentos", "donde surte medicamentos", "donde surtidos medicamentos", "donde surtido medicamentos", "donde surten medicinas",
+                "donde surte medicinas", "donde surtidos medicinas", "donde surtido medicinas", "donde surten farmacias", "donde surte farmacias",
+                "donde surtidos farmacias", "donde surtido farmacias", "donde surten farmasia", "donde surte farmasia", "donde surtidos farmasia",
+                "donde surtido farmasia", "donde surten farmazias", "donde surte farmazias", "donde surtidos farmazias", "donde surtido farmazias",
+                "donde surten farmazia", "donde surte farmazia", "donde surtidos farmazia", "donde surtido farmazia", "donde surten farmaciaa",
+                "donde surte farmaciaa", "donde surtidos farmaciaa", "donde surtido farmaciaa", "surten medicamentos farmacia", "surte medicamentos farmacia",
+                "surtidos medicamentos farmacia", "surtido medicamentos farmacia", "surten medicamentos farmacias",
+                "surte medicamentos farmacias", "surtidos medicamentos farmacias", "surtido medicamentos farmacias", "surten medicamentos farmasia", "surte medicamentos farmasia",
+                "surtidos medicamentos farmasia", "surtido medicamentos farmasia", "surten medicamentos farmazias", "surte medicamentos farmazias", "surtidos medicamentos farmazias",
+                "surtido medicamentos farmazias", "surten medicamentos farmazia", "surte medicamentos farmazia", "surtidos medicamentos farmazia", "surtido medicamentos farmazia",
+                "farmacologo surte medicamentos", "farmacologos surten medicamentos", "farmacologa surte medicamentos", "farmacologas surten medicamentos", "surten farmacias medicamentos",
+                "surte farmacias medicamentos", "surtidos farmacias medicamentos", "surtido farmacias medicamentos", "surten farmazias medicamentos", "surte farmazias medicamentos",
+
+                "conchita",
+                "calderon",
+                "maria",
+                "maria conchita",
+                "conchita maria",
+                "maria calderon",
+                "conchita calderon",
+                "maria romero",
+                "conchita romero",
+                "calderon romero",
+                "romero calderon",
+                "maria conchita calderon",
+                "maria conchita romero",
+                "conchita calderon romero",
+                "maria calderon romero",
+                "conchita maria calderon",
+                "m c calderon romero",
+                "contacto maria conchita calderon",
+                "calderon romero maria conchita"
+            ],
+            "respuestas": [
+                "Gestiona el almacenamiento, control y dispensación de medicamentos, asegurando tratamientos seguros y eficaces conforme a indicaciones médicas. Para información sobre disponibilidad, consulta los canales oficiales."
+            ]
+        },
+        {
+            "tag": "gastroenterologia",
+            "preguntas": [
+                "gastroenterologia", "gastroentorologos", "gastroentorologas", "gastro", "gastros",
+                "entorologia", "gastroentorologo", "gastroentorologa", "7044", "044", "44",
+
+                "zamudio",
+                "vazquez",
+                "vianey paola",
+                "paola vianey",
+                "vianey zamudio",
+                "paola zamudio",
+                "vianey vazquez",
+                "paola vazquez",
+                "zamudio vazquez",
+                "vazquez zamudio",
+                "vianey paola zamudio",
+                "vianey paola vazquez",
+                "paola zamudio vazquez",
+                "vianey zamudio vazquez",
+                "vianey p zamudio",
+                "dra vianey paola zamudio vazquez",
+                "doctora vianey paola zamudio",
+                "dra vianey zamudio",
+                "contacto vianey paola zamudio",
+                "zamudio vazquez vianey paola"
+
+
+            ],
+            "respuestas": [
+                "Se realizan procedimientos diagnósticos y terapéuticos mínimamente invasivos que permiten examinar el tracto digestivo de forma segura y precisa en pacientes pediátricos."
+            ]
+        },
+        {
+            "tag": "quirofano_endoscopia",
+            "preguntas": [
+                "endoscopia", "endoscopias", "doscopia", "doscopias", "endosco", "endos", "7043", "043", "43",
+                "broncocopia", "bronco", "colonoscopia", "colon",
+
+                "joaquina",
+                "guadalupe",
+                "rubio",
+                "joaquina guadalupe",
+                "guadalupe joaquina",
+                "joaquina rubio",
+                "guadalupe rubio",
+                "joaquina lopez",
+                "guadalupe lopez",
+                "rubio lopez",
+                "lopez rubio",
+                "joaquina guadalupe rubio",
+                "joaquina guadalupe lopez",
+                "guadalupe rubio lopez",
+                "joaquina rubio lopez",
+                "joaquina guadalupe rubio lopez",
+                "rubio lopez joaquina guadalupe",
+                "lic joaquina guadalupe rubio lopez",
+                "licenciada joaquina guadalupe rubio"
+
+            ],
+            "respuestas": [
+                "Se realizan procedimientos digestivos mínimamente invasivos con atención especializada y enfoque integral para pacientes pediátricos."
+            ]
+        },
+        {
+            "tag": "genetica",
+            "preguntas": [
+                "genetica", "geneticas", "genetico", "gene", "7045",
+                "045", "45",
+
+                "ernesto",
+                "duenas",
+                "dueñas",
+                "arias",
+                "jesus ernesto",
+                "ernesto jesus",
+                "jesus duenas",
+                "ernesto duenas",
+                "jesus arias",
+                "ernesto arias",
+                "duenas arias",
+                "arias duenas",
+                "jesus ernesto duenas",
+                "jesus ernesto arias",
+                "ernesto duenas arias",
+                "jesus duenas arias",
+                "dr jesus ernesto duenas arias",
+                "doctor jesus duenas",
+                "doctor jesus ernesto",
+                "dr jesus duenas",
+                "contacto jesus ernesto duenas",
+                "duenas arias jesus ernesto"
+            ],
+            "respuestas": [
+                "Se ofrece evaluación, diagnóstico y orientación a pacientes con posibles enfermedades de origen genético, apoyando con estudios especializados y asesoramiento clínico."
+            ]
+        },
+        {
+            "tag": "infectologia",
+            "preguntas": [
+                "infectologia", "infectologica", "infecciones", "infecciosas", "infecto",
+                "infec", "7046", "046", "46", "7047", "047", "47",
+
+                "velazquez",
+                "rios",
+                "carlos alberto",
+                "alberto carlos",
+                "carlos velazquez",
+                "alberto velazquez",
+                "carlos rios",
+                "alberto rios",
+                "velazquez rios",
+                "rios velazquez",
+                "carlos alberto velazquez",
+                "carlos alberto rios",
+                "alberto velazquez rios",
+                "carlos velazquez rios",
+                "dr carlos alberto velazquez rios",
+                "doctor carlos velazquez",
+                "doctor carlos alberto",
+                "dr carlos velazquez",
+                "contacto carlos alberto velazquez",
+                "velazquez rios carlos alberto",
+
+                "nancy",
+                "rebeca",
+                "diaz",
+                "beltran",
+                "nancy rebeca",
+                "rebeca nancy",
+                "nancy diaz",
+                "rebeca diaz",
+                "nancy beltran",
+                "rebeca beltran",
+                "diaz beltran",
+                "beltran diaz",
+                "nancy rebeca diaz",
+                "nancy rebeca beltran",
+                "rebeca diaz beltran",
+                "nancy diaz beltran",
+                "n rebeca diaz beltran",
+                "enf nancy rebeca diaz beltran",
+                "enfermera nancy rebeca",
+                "contacto nancy diaz beltran",
+                "diaz beltran nancy rebeca"
+            ],
+            "respuestas": [
+                "Se brinda atención especializada para la prevención, diagnóstico y tratamiento de enfermedades infecciosas en pacientes pediátricos, con enfoque clínico integral."
+            ]
+        },
+        {
+            "tag": "informatica",
+            "preguntas": [
+                "informatica", "informaticas", "informatico", "informaticos", "informati",
+                "7048", "048", "48", "7010", "010", "10",
+
+                "maricruz",
+                "maricrus",
+                
+                "sainz",
+                "jorge antonio",
+                "antonio jorge",
+                "jorge cruz",
+                "antonio cruz",
+                "jorge sainz",
+                "antonio sainz",
+                "cruz sainz",
+                "sainz cruz",
+                "jorge antonio cruz",
+                "jorge antonio sainz",
+                "antonio cruz sainz",
+                "jorge cruz sainz",
+                "antonio jorge cruz",
+                "j a cruz sainz",
+                "j antonio cruz sainz",
+                "lic jorge antonio cruz sainz",
+                "lic jorge cruz sainz",
+                "licenciado jorge antonio cruz",
+                "licenciado jorge cruz sainz",
+                "contacto jorge antonio cruz",
+                "cruz sainz jorge antonio"
+            ],
+            "respuestas": [
+                "Brinda soporte técnico, mantenimiento de equipos y sistemas, así como asistencia en el uso de plataformas digitales institucionales para personal médico y administrativo."
+            ]
+        },
+        {
+            "tag": "informes_recepcion",
+            "preguntas": [
+                "informes", "recepcion", "resepcion", "recepciones", "resepciones",
+                "recepcionista", "resepcionista", "recepcionistas", "resepcionistas", "recepsion",
+                "resepsion", "recepsiones", "resepsiones", "recepsionista", "resepsionista",
+                "recepsionistas", "resepsionistas", "informes planta baja", "7049", "049", "49"
+            ],
+            "respuestas": [
+                "Ofrece orientación general a usuarios y visitantes, resolviendo dudas sobre ubicaciones, trámites, servicios y canalizando a las áreas correspondientes desde la entrada principal del hospital."
+            ]
+        },
+        {
+            "tag": "inhaloterapia",
+            "preguntas": [
+                "inhaloterapia", "inhaloterapias", "inaloterapia", "inaloterapias", "inhala",
+                "inala", "inhalo", "inalo", "inha", "ina",
+                "inalaciones", "inalasiones", "inhalaciones", "inhalasiones", "inalacion",
+                "inalasion", "inhalacion", "inhalasion", "respiratoria", "respiratorias",
+                "respirar", "respira", "respi", "respirando", "pulmon", "pulmones", "pulmonares", "7050", "050", "50",
+
+                "castillo",
+                "ana guadalupe",
+                "guadalupe ana",
+                "ana cruz",
+                "guadalupe cruz",
+                "ana castillo",
+                "guadalupe castillo",
+                "cruz castillo",
+                "castillo cruz",
+                "ana guadalupe cruz",
+                "ana guadalupe castillo",
+                "guadalupe cruz castillo",
+                "ana cruz castillo",
+                "a guadalupe cruz castillo",
+                "enf ana guadalupe cruz castillo",
+                "enfermera ana guadalupe",
+                "contacto ana guadalupe cruz",
+                "cruz castillo ana guadalupe",
+
+                "reyes",
+                "ana maria",
+                "maria ana",
+                "ana lopez",
+                "maria lopez",
+                "ana reyes",
+                "maria reyes",
+                "lopez reyes",
+                "reyes lopez",
+                "ana maria lopez",
+                "ana maria reyes",
+                "maria lopez reyes",
+                "ana lopez reyes",
+                "a maria lopez reyes",
+                "dra ana maria lopez reyes",
+                "doctora ana maria lopez",
+                "dra ana lopez",
+                "contacto ana maria lopez",
+                "lopez reyes ana maria"
+            ],
+            "respuestas": [
+                "Brinda atención especializada en el manejo de terapias respiratorias, apoyando en la administración de tratamientos para mejorar la función pulmonar de pacientes pediátricos."
+            ]
+        },
+        {
+            "tag": "juridico",
+            "preguntas": [
+                "juridico", "juridicos", "juridica", "juridicas", "juridi", "juri",
+                "asesor", "asesoria", "asesorias", "acesor",
+                "acesoria", "acesorias", "abogado", "abogados", "abogada",
+                "abogadas", "abogacia", "abogacias", "7051", "051", "51",
+
+                "elizabeth",
+                "elisabeth",
+                "elizabet",
+                "elisabet",
+                "gomez",
+                "olivarez",
+                "elizabeth gomez",
+                "elizabeth olivarez",
+                "gomez elizabeth",
+                "olivarez elizabeth",
+                "gomez olivarez",
+                "olivarez gomez",
+                "elizabeth gomez olivarez",
+                "elizabeth olivarez gomez",
+                "e gomez olivarez",
+                "contacto elizabeth gomez",
+                "gomez olivarez elizabeth"
+            ],
+            "respuestas": [
+                "Brinda asesoría legal institucional, apoyo en la revisión de documentos oficiales, atención a trámites jurídicos y acompañamiento en procesos relacionados con normativas y derechos dentro del hospital."
+            ]
+        },
+        {
+            "tag": "laboratorio",
+            "preguntas": [
+                "laboratorio", "laboratorios", "laborato", "labora", "lab",
+                "labs", "lavoratorio", "lavoratorios", "lavorato", "lavora",
+                "lav", "lavs", "7052", "052", "52", "7130", "130", "7131", "131",
+
+                "miranda",
+                "leti",
+                "maria leticia",
+                "leticia maria",
+                "maria felix",
+                "leticia felix",
+                "maria miranda",
+                "leticia miranda",
+                "felix miranda",
+                "miranda felix",
+                "maria leticia felix",
+                "maria leticia miranda",
+                "leticia felix miranda",
+                "maria felix miranda",
+                "qfb maria leticia felix miranda",
+                "quimica maria leticia",
+                "qfb felix miranda",
+                "contacto maria leticia felix",
+                "felix miranda maria leticia"
+            ],
+            "respuestas": [
+                "Ofrece servicios de análisis clínicos, recepción de muestras, procesamiento y entrega de resultados, con personal especializado en cada área, incluyendo recepción, filtro y coordinación técnica."
+            ]
+        },
+        {
+            "tag": "mantenimiento",
+            "preguntas": [
+                "mantenimiento", "mantenimientos", "mantenimi", "manteni", "manten",
+                "reparacion", "reparaciones", "reparasion", "reparasiones", "reparar",
+                "repara", "reparo", "aires", "aire", "falla",
+                "fallas", "ayuda tecnica", "7053", "053", "53", "7054", "054", "54",
+
+                "enrique",
+                "rubio",
+                "jesus enrique",
+                "enrique jesus",
+                "jesus rubio",
+                "enrique rubio",
+                "jesus medina",
+                "enrique medina",
+                "rubio medina",
+                "medina rubio",
+                "jesus enrique rubio",
+                "jesus enrique medina",
+                "enrique rubio medina",
+                "jesus rubio medina",
+                "ing jesus enrique rubio medina",
+                "ingeniero jesus enrique rubio",
+                "contacto jesus enrique rubio",
+                "rubio medina jesus enrique"
+            ],
+            "respuestas": [
+                "Se encarga de atender reportes técnicos, reparar instalaciones, equipos y asegurar el buen funcionamiento de la infraestructura hospitalaria."
+            ]
+        },
+        {
+            "tag": "medicina_interna",
+            "preguntas": [
+                "medicina interna", "medisina interna", "medicina internas", "medisina internas", "interna medicina",
+                "interna medisina", "internas medicina", "internas medisina", "medic interna", "medic internas",
+                "interna medic", "internas medic", "7055", "055", "55",
+
+                "rosario",
+                "chamorro",
+                "chairez",
+                "maria rosario",
+                "rosario maria",
+                "maria del rosario",
+                "del rosario maria",
+                "maria chamorro",
+                "rosario chamorro",
+                "maria chairez",
+                "rosario chairez",
+                "chamorro chairez",
+                "chairez chamorro",
+                "maria del rosario chamorro",
+                "maria del rosario chairez",
+                "rosario chamorro chairez",
+                "maria chamorro chairez",
+                "enf maria del rosario chamorro chairez",
+                "enfermera maria del rosario",
+                "contacto maria chamorro chairez",
+                "chairez chamorro maria del rosario"
+            ],
+            "respuestas": [
+                "Atiende a pacientes con enfermedades complejas o crónicas, brindando un enfoque integral en el diagnóstico y tratamiento."
+            ]
+        },
+        {
+            "tag": "medicina_legal",
+            "preguntas": [
+                "lega", "legal",
+                "legales", "7056", "056", "56",
+
+                "medina",
+                "ana luisa",
+                "luisa ana",
+                "ana castro",
+                "luisa castro",
+                "ana medina",
+                "luisa medina",
+                "castro medina",
+                "medina castro",
+                "ana luisa castro",
+                "ana luisa medina",
+                "luisa castro medina",
+                "ana castro medina",
+                "dra ana luisa castro medina",
+                "doctora ana luisa castro",
+                "dra castro medina",
+                "contacto ana luisa castro",
+                "castro medina ana luisa"
+            ],
+            "respuestas": [
+                "Brinda apoyo en casos médicos con implicaciones legales, emite dictámenes y colabora en la resolución de situaciones jurídicas que requieren evaluación clínica especializada."
+            ]
+        },
+        {
+            "tag": "medicina_preventiva",
+            "preguntas": [
+                "prebentiba", "prebentiva", "preventiba", "preventiva", "prebentibas",
+                "prebentivas", "preventibas", "preventivas", "prebenti", "preventi",
+                "preben", "preven", "prevencion", "prevension", "prevenciones",
+                "prevensiones", "prevenir", "preven", "prebencion", "prebension",
+                "prebenciones", "prebensiones", "prebenir", "preben", "7057", "057", "57",
+
+                "silvia",
+                "viridiana",
+                "leyva",
+                "silvia viridiana",
+                "viridiana silvia",
+                "silvia angulo",
+                "viridiana angulo",
+                "silvia leyva",
+                "viridiana leyva",
+                "angulo leyva",
+                "leyva angulo",
+                "silvia viridiana angulo",
+                "silvia viridiana leyva",
+                "viridiana angulo leyva",
+                "silvia angulo leyva",
+                "enf silvia viridiana angulo leyva",
+                "enfermera silvia viridiana",
+                "contacto silvia angulo leyva",
+                "angulo leyva silvia viridiana"
+            ],
+            "respuestas": [
+                "Realiza acciones orientadas a la promocion de la salud, prevencion de enfermedades y vigilancia epidemiologica en beneficio de los pacientes y el entorno hospitalario."
+            ]
+        },
+        {
+            "tag": "medicina_transfusional",
+            "preguntas": [
+                "ts", "tran", "trans", "transfusional", "transfucional",
+                "tranfusional", "tranfucional", "transfunsional", "transfuncional", "tranfunsional",
+                "tranfuncional", "transfusionales", "transfucionales", "tranfusionales", "tranfucionales",
+                "transfunsionales", "transfuncionales", "tranfunsionales", "tranfuncionales", "transfusion",
+                "transfucion", "tranfusion", "tranfucion", "transfunsion", "transfuncion",
+                "tranfunsion", "tranfuncion", "transfusiones", "transfuciones", "tranfusiones",
+                "tranfuciones", "transfunsiones", "transfunciones", "tranfunsiones", "tranfunciones", "7058", "058", "58",
+
+                "favela",
+                "bernal",
+                "jessica",
+                "lizbeth",
+                "favela bernal",
+                "bernal favela",
+                "jessica lizbeth",
+                "lizbeth jessica",
+                "favela jessica",
+                "bernal jessica",
+                "favela lizbeth",
+                "bernal lizbeth",
+                "favela bernal jessica",
+                "favela bernal lizbeth",
+                "favela bernal jessica lizbeth",
+                "enf favela bernal jessica lizbeth",
+                "enfermera jessica lizbeth",
+                "contacto favela bernal",
+                "favela bernal lizbeth jessica"
+            ],
+            "respuestas": [
+                "Esta area se encarga de la gestión, control y realización de transfusiones sanguíneas y sus derivados, asegurando la seguridad y compatibilidad para los pacientes que lo requieren. También brinda asesoría sobre procedimientos transfusionales."
+            ]
+        },
+        {
+            "tag": "modulo_informacion",
+            "preguntas": [
+                "modulo", "modulos", "7059", "059", "59",
+                "modulo de informacion", "modulo de informasion", "modulo informacion", "modulo informasion",
+                "modulo de informaciones", "modulo de informasiones", "modulo informaciones", "modulo informasiones",
+                "modulos de informacion", "modulos de informasion", "modulos informacion", "modulos informasion",
+                "modulos de informaciones", "modulos de informasiones", "modulos informaciones", "modulos informasiones"
+            ],
+            "respuestas": [
+                "Este modulo está ubicado en la entrada principal del hospital. Aquí puedes recibir orientación, resolver dudas y ser canalizado al área correspondiente según tu necesidad."
+            ]
+        },
+        {
+            "tag": "neonatologia",
+            "preguntas": [
+                "neo", "neonato", "neonatologia", "neonatologias", "neonatolojia",
+                "neonatolojias", "neonatoligia", "neonatoligias", "neonatologo", "neonatologos",
+                "neonatologa", "neonatologas", "7060", "060", "60", "7061", "061", "61", "7062", "062", "62",
+
+                "aleyda",
+                "chavez",
+                "aleyda zazueta",
+                "aleyda chavez",
+                "zazueta aleyda",
+                "chavez aleyda",
+                "zazueta chavez",
+                "chavez zazueta",
+                "aleyda zazueta chavez",
+                "aleyda chavez zazueta",
+                "dra aleyda zazueta chavez",
+                "doctora aleyda zazueta",
+                "dra chavez zazueta",
+                "contacto aleyda zazueta",
+                "zazueta chavez aleyda",
+
+                "sandra",
+                "benitez",
+                "sandra elena",
+                "elena sandra",
+                "sandra benitez",
+                "elena benitez",
+                "sandra lopez",
+                "elena lopez",
+                "benitez lopez",
+                "lopez benitez",
+                "sandra elena benitez",
+                "sandra elena lopez",
+                "sandra benitez lopez",
+                "elena benitez lopez",
+                "enf sandra elena benitez lopez",
+                "enfermera sandra elena",
+                "contacto sandra benitez lopez",
+                "benitez lopez sandra elena"
+            ],
+            "respuestas": [
+                "Atiende a recien nacidos que requieren cuidados especiales por condiciones medicas, brindando soporte vital y vigilancia continua desde el nacimiento."
+            ]
+        },
+        {
+            "tag": "oncologia",
+            "preguntas": [
+                "onco", "oncolo", "oncologia", "oncolojia", "oncologicas",
+                "oncologo", "oncologos", "oncologa", "oncologas",
+
+                "obdilia",                      
+                "obdilia gutierrez",
+                "obdilia guzman",
+                "gutierrez obdilia",
+                "guzman obdilia",
+                "gutierrez guzman",
+                "guzman gutierrez",
+                "obdilia gutierrez guzman",
+                "obdilia guzman gutierrez",
+                "dra obdilia gutierrez guzman",
+                "doctora obdilia gutierrez",
+                "dra guzman gutierrez",
+                "contacto obdilia gutierrez",
+                "gutierrez guzman obdilia"
+            ],
+            "respuestas": [
+                "Incluye distintas áreas dedicadas a la atención de pacientes pediátricos con enfermedades oncohematológicas, brindando tratamientos como quimioterapia y procedimientos especializados con un enfoque multidisciplinario. <b>Selecciona un área para saber más información</b>."
+            ]
+        },
+        {
+            "tag": "oncologia_angelita",
+            "preguntas": [
+                "oncologia angelita",
+                "oncolojia angelita",
+                "onco angelita",
+                "angelita",
+                "angel", "7064", "064", "64"
+            ],
+            "respuestas": [
+                "Es un área especializada en la atención de pacientes pediátricos con cáncer, enfocada en brindar un espacio humanizado para el tratamiento y seguimiento integral de los menores."
+            ]
+        },
+        {
+            "tag": "oncologia_banco_sangre",
+            "preguntas": [
+                "oncologia banco de sangre", "oncolojia banco de sangre", "oncologica banco de sangre", "oncologicas banco de sangre", "oncologo banco de sangre",
+                "oncologa banco de sangre", "onco banco de sangre", "oncolo banco de sangre", "banco de sangre oncologia", "banco de sangre oncolojia",
+                "banco de sangre oncologica", "banco de sangre oncologicas", "banco de sangre oncologo", "banco de sangre oncologa", "banco de sangre onco",
+                "banco de sangre oncolo", "banco sangre oncologia", "banco sangre oncolojia", "banco sangre oncologo", "banco sangre oncologa",
+                "banco sangre oncologicas", "banco sangre onco", "banco sangre oncolo", "sangre banco oncologia", "sangre banco oncolojia",
+                "sangre banco oncologo", "sangre banco oncologa", "sangre banco oncologicas", "sangre banco onco", "sangre banco oncolo",
+                "sangre oncologia banco", "sangre oncolojia banco", "sangre oncologo banco", "sangre oncologa banco", "oncologia sangre banco",
+                "oncolojia sangre banco", "oncologo sangre banco", "oncologa sangre banco", "onco sangre banco", "oncolo sangre banco",
+                "onco banco sangre", "oncolo banco sangre", "oncologia banco sangre", "oncolojia banco sangre", "oncologo banco sangre",
+                "oncologa banco sangre", "banco oncologia sangre", "banco oncolojia sangre", "banco oncologo sangre", "banco oncologa sangre",
+                "sangre banco de oncologia", "sangre banco de oncolojia", "sangre banco de oncologo", "sangre banco de oncologa", "7065", "065", "65"
+            ],
+            "respuestas": [
+                "Es una unidad especializada que apoya los tratamientos oncológicos mediante la recolección, análisis y suministro seguro de sangre y sus derivados para pacientes pediátricos."
+            ]
+        },
+        {
+            "tag": "oncologia_cateteres",
+            "preguntas": [
+                "cateters", "catete", "cateter", "cateteres",
+                "oncologia cateters", "oncolojia cateters", "oncolo cateters", "onco cateters",
+                "oncologia catete", "oncolojia catete", "oncolo catete", "onco catete",
+                "oncologia cateter", "oncolojia cateter", "oncolo cateter", "onco cateter",
+                "oncologia cateteres", "oncolojia cateteres", "oncolo cateteres", "onco cateteres",
+                "cateters oncologia", "cateters oncolojia", "cateters oncolo", "cateters onco",
+                "catete oncologia", "catete oncolojia", "catete oncolo", "catete onco",
+                "cateter oncologia", "cateter oncolojia", "cateter oncolo", "cateter onco",
+                "cateteres oncologia", "cateteres oncolojia", "cateteres oncolo", "cateteres onco", "7066", "066", "66"
+            ],
+            "respuestas": [
+                "Es un área encargada del manejo, instalación y seguimiento de catéteres utilizados en pacientes oncológicos pediátricos, brindando atención especializada para asegurar tratamientos eficaces y seguros."
+            ]
+        },
+        {
+            "tag": "oncologia_jefatura",
+            "preguntas": [
+                "oncologia jefatura", "oncolojia jefatura", "onco jefatura",
+                "oncologia jefa", "oncolojia jefa", "onco jefa",
+                "jefatura oncologia", "jefatura oncolojia", "jefatura onco",
+                "jefa oncologia", "jefa oncolojia", "jefa onco", "7067", "067", "67"
+            ],
+            "respuestas": [
+                "Es el área responsable de coordinar, supervisar y gestionar los servicios y personal relacionados con la atención oncológica pediátrica dentro del hospital."
+            ]
+        },
+        {
+            "tag": "oncologia_jefe",
+            "preguntas": [
+                "oncologia jefe", "oncolojia jefe", "onco jefe", "oncologo jefe", "oncologa jefe",
+                "jefe oncologia", "jefe oncolojia", "jefe onco", "jefe oncologo", "jefe oncologa", "7068", "068", "68"
+            ],
+            "respuestas": [
+                "Es el encargado de liderar y coordinar las actividades médicas y administrativas del área oncológica pediátrica, asegurando una atención integral a los pacientes."
+            ]
+        },
+        {
+            "tag": "oncologia_oficina_hematologia",
+            "preguntas": [
+                "oncologia oficina hematologia", "oncolojia oficina hematologia", "onco oficina hematologia", "oncologia oficina hemato", "oncolojia oficina hemato",
+                "onco oficina hemato", "oncologia oficina hema", "oncolojia oficina hema", "onco oficina hema", "oficina hematologia oncologia",
+                "oficina hematologia oncolojia", "oficina hematologia onco", "oficina hemato oncologia", "oficina hemato oncolojia", "oficina hemato onco",
+                "oficina hema oncologia", "oficina hema oncolojia", "oficina hema onco", "7070", "070", "70"
+            ],
+            "respuestas": [
+                "Atiende funciones administrativas y médicas relacionadas con el manejo hematológico de pacientes pediátricos oncológicos, coordinando actividades y atención especializada."
+            ]
+        },
+        {
+            "tag": "oncologia_oficina_secretaria",
+            "preguntas": [
+                "oncologia oficina secretaria", "oncolojia oficina secretaria", "onco oficina secretaria", "oncologia ofisina secretaria", "oncolojia ofisina secretaria",
+                "onco ofisina secretaria", "secretaria oncologia oficina", "secretaria oncolojia oficina", "secretaria onco oficina", "oncologia secretaria",
+                "oncolojia secretaria", "onco secretaria", "secretaria oncologia", "secretaria oncolojia", "secretaria onco",
+                "oncologia oficina secre", "oncolojia oficina secre", "onco oficina secre", "oncologia ofisina secre", "oncolojia ofisina secre",
+                "onco ofisina secre", "secre oncologia oficina", "secre oncolojia oficina", "secre onco oficina", "oncologia secre",
+                "oncolojia secre", "onco secre", "secre oncologia", "secre oncolojia", "secre onco", "7071", "071", "71"
+            ],
+            "respuestas": [
+                "Gestiona trámites administrativos, coordinación de agendas y apoyo organizativo en el área de oncología pediátrica."
+            ]
+        },
+        {
+            "tag": "oncologia_quimioterapia_amb",
+            "preguntas": [
+                "amb", "quimio", "quimios", "quimioterapia", "quimioterapias",
+                "onco amb", "oncolo amb", "oncologia amb", "oncolojia amb", "oncologicas amb",
+                "oncologo amb", "oncologos amb", "oncologa amb", "oncologas amb", "amb onco",
+                "amb oncolo", "amb oncologia", "amb oncolojia", "amb oncologicas",
+                "amb oncologo", "amb oncologos", "amb oncologa", "amb oncologas", "onco quimio",
+                "oncolo quimio", "oncologia quimio", "oncolojia quimio", "oncologicas quimio",
+                "oncologo quimio", "oncologos quimio", "oncologa quimio", "oncologas quimio", "quimio onco",
+                "quimio oncolo", "quimio oncologia", "quimio oncolojia", "quimio oncologicas",
+                "quimio oncologo", "quimio oncologos", "quimio oncologa", "quimio oncologas", "onco quimios",
+                "oncolo quimios", "oncologia quimios", "oncolojia quimios", "oncologicas quimios",
+                "oncologo quimios", "oncologos quimios", "oncologa quimios", "oncologas quimios", "quimios onco",
+                "quimios oncolo", "quimios oncologia", "quimios oncolojia", "quimios oncologicas",
+                "quimios oncologo", "quimios oncologos", "quimios oncologa", "quimios oncologas", "onco quimioterapia",
+                "oncolo quimioterapia", "oncologia quimioterapia", "oncolojia quimioterapia", "oncologicas quimioterapia",
+                "oncologo quimioterapia", "oncologos quimioterapia", "oncologa quimioterapia", "oncologas quimioterapia", "quimioterapia onco",
+                "quimioterapia oncolo", "quimioterapia oncologia", "quimioterapia oncolojia", "quimioterapia oncologicas",
+                "quimioterapia oncologo", "quimioterapia oncologos", "quimioterapia oncologa", "quimioterapia oncologas", "onco quimioterapias",
+                "oncolo quimioterapias", "oncologia quimioterapias", "oncolojia quimioterapias", "oncologicas quimioterapias",
+                "oncologo quimioterapias", "oncologos quimioterapias", "oncologa quimioterapias", "oncologas quimioterapias", "quimioterapias onco",
+                "quimioterapias oncolo", "quimioterapias oncologia", "quimioterapias oncolojia", "quimioterapias oncologicas",
+                "quimioterapias oncologo", "quimioterapias oncologos", "quimioterapias oncologa", "quimioterapias oncologas", "7072", "072", "72"
+            ],
+            "respuestas": [
+                "Unidad encargada de administrar tratamientos de quimioterapia a pacientes pediatricos con enfermedades oncohematologicas, brindando atencion especializada y seguimiento medico continuo."
+            ]
+        },
+        {
+            "tag": "oncologia_recepcion_consulta",
+            "preguntas": [
+                "oncologia recepcion consulta", "oncolojia recepcion consulta", "onco recepcion consulta", "oncologia recepcion consultas", "oncolojia recepcion consultas",
+                "onco recepcion consultas", "recepcion oncologia consulta", "recepcion oncolojia consulta", "recepcion onco consulta", "recepcion oncologia consultas",
+                "recepcion oncolojia consultas", "recepcion onco consultas", "consulta oncologia recepcion", "consulta oncolojia recepcion", "consulta onco recepcion",
+                "consultas oncologia recepcion", "consultas oncolojia recepcion", "consultas onco recepcion", "oncologia consulta recepcion", "oncolojia consulta recepcion",
+                "onco consulta recepcion", "oncologia consultas recepcion", "oncolojia consultas recepcion", "onco consultas recepcion", "consulta recepcion oncologia",
+                "consulta recepcion oncolojia", "consulta recepcion onco", "consultas recepcion oncologia", "consultas recepcion oncolojia", "consultas recepcion onco",
+                "oncologia recepcion", "oncolojia recepcion", "onco recepcion", "recepcion oncologia", "recepcion oncolojia",
+                "recepcion onco", "oncologia consultas", "oncolojia consultas", "onco consultas", "oncologia consulta",
+                "oncolojia consulta", "onco consulta", "consultas oncologia", "consultas oncolojia", "consultas onco",
+                "consulta oncologia", "consulta oncolojia", "consulta onco", "7073", "073", "73"
+            ],
+            "respuestas": [
+                "Espacio destinado a la recepcion y gestion de citas para consultas medicas en el area de oncologia pediatrica, brindando orientacion a pacientes y familiares."
+            ]
+        },
+        {
+            "tag": "oncologia_residentes",
+            "preguntas": [
+                "oncologia residentes", "oncolojia residentes", "onco residentes", "residentes oncologia", "residentes oncolojia",
+                "residentes onco", "oncologia residente", "oncolojia residente", "onco residente", "residente oncologia",
+                "residente oncolojia", "residente onco", "7074", "074", "74"
+            ],
+            "respuestas": [
+                "En esta area se encuentran los medicos residentes que realizan su formacion especializada en oncologia pediatrica, participando en la atencion y seguimiento de los pacientes bajo supervision medica."
+            ]
+        },
+        {
+            "tag": "oncologia_ts_hospitalizacion",
+            "preguntas": [
+                "oncologia ts hospitalizacion", "oncolojia ts hospitalizacion", "onco ts hospitalizacion", "oncologia ts hospitalisacion", "oncolojia ts hospitalisacion",
+                "onco ts hospitalisacion", "ts oncologia hospitalizacion", "ts oncolojia hospitalizacion", "ts onco hospitalizacion", "ts oncologia hospitalisacion",
+                "ts oncolojia hospitalisacion", "ts onco hospitalisacion", "hospitalizacion oncologia ts", "hospitalizacion oncolojia ts", "hospitalizacion onco ts",
+                "hospitalisacion oncologia ts", "hospitalisacion oncolojia ts", "hospitalisacion onco ts", "hospitalizacion ts oncologia", "hospitalizacion ts oncolojia",
+                "hospitalizacion ts onco", "hospitalisacion ts oncologia", "hospitalisacion ts oncolojia", "hospitalisacion ts onco", "oncologia hospitalizacion ts",
+                "oncolojia hospitalizacion ts", "onco hospitalizacion ts", "oncologia hospitalisacion ts", "oncolojia hospitalisacion ts", "onco hospitalisacion ts", "7076", "076", "76"
+            ],
+            "respuestas": [
+                "Esta area brinda apoyo social y acompañamiento a los pacientes hospitalizados con enfermedades oncohematologicas, asi como a sus familias, para facilitar la integracion y acceso a servicios medicos y administrativos durante su estancia."
+            ]
+        },
+        {
+            "tag": "oncologia_somatometria",
+            "preguntas": [
+                "somatometria", "somatometrias", "somatome", "somato", "soma",
+                "onco somatometria", "oncolo somatometria", "oncologia somatometria", "oncolojia somatometria", "oncologicas somatometria",
+                "oncologo somatometria", "oncologos somatometria", "oncologa somatometria", "oncologas somatometria", "somatometria onco",
+                "somatometria oncolo", "somatometria oncologia", "somatometria oncolojia", "somatometria oncologicas",
+                "somatometria oncologo", "somatometria oncologos", "somatometria oncologa", "somatometria oncologas",
+                "onco somatometrias", "oncolo somatometrias", "oncologia somatometrias", "oncolojia somatometrias", "oncologicas somatometrias",
+                "oncologo somatometrias", "oncologos somatometrias", "oncologa somatometrias", "oncologas somatometrias", "somatometrias onco",
+                "somatometrias oncolo", "somatometrias oncologia", "somatometrias oncolojia", "somatometrias oncologicas",
+                "somatometrias oncologo", "somatometrias oncologos", "somatometrias oncologa", "somatometrias oncologas",
+                "onco somatome", "oncolo somatome", "oncologia somatome", "oncolojia somatome", "oncologicas somatome",
+                "oncologo somatome", "oncologos somatome", "oncologa somatome", "oncologas somatome", "somatome onco",
+                "somatome oncolo", "somatome oncologia", "somatome oncolojia", "somatome oncologicas",
+                "somatome oncologo", "somatome oncologos", "somatome oncologa", "somatome oncologas",
+                "onco somato", "oncolo somato", "oncologia somato", "oncolojia somato", "oncologicas somato",
+                "oncologo somato", "oncologos somato", "oncologa somato", "oncologas somato", "somato onco",
+                "somato oncolo", "somato oncologia", "somato oncolojia", "somato oncologicas",
+                "somato oncologo", "somato oncologos", "somato oncologa", "somato oncologas", "7118", "118"
+            ],
+            "respuestas": [
+                "Esta area se encarga de realizar mediciones corporales precisas a pacientes oncohematologicos, como peso, talla y signos vitales, esenciales para el seguimiento clinico y el ajuste de tratamientos."
+            ]
+        },
+        {
+            "tag": "oncologia_tumores",
+            "preguntas": [
+                "onco tumores", "oncolo tumores", "oncologia tumores", "oncolojia tumores", "oncologicas tumores",
+                "oncologo tumores", "oncologos tumores", "oncologa tumores", "oncologas tumores", "tumores onco",
+                "tumores oncolo", "tumores oncologia", "tumores oncolojia", "tumores oncologicas",
+                "tumores oncologo", "tumores oncologos", "tumores oncologa", "tumores oncologas",
+                "onco tumor", "oncolo tumor", "oncologia tumor", "oncolojia tumor", "oncologicas tumor",
+                "oncologo tumor", "oncologos tumor", "oncologa tumor", "oncologas tumor", "tumor onco",
+                "tumor oncolo", "tumor oncologia", "tumor oncolojia", "tumor oncologicas",
+                "tumor oncologo", "tumor oncologos", "tumor oncologa", "tumor oncologas", "7119", "119"
+            ],
+            "respuestas": [
+                "Se enfoca en el estudio, diagnostico y seguimiento de tumores en pacientes pediatricos, colaborando estrechamente con otras areas como hematologia, quimioterapia y hospitalizacion para brindar un tratamiento integral."
+            ]
+        },
+        {
+            "tag": "oncologia_sala",
+            "preguntas": [
+                "oncologia sala",
+                "oncolojia sala",
+                "onco sala",
+                "sala oncologia",
+                "sala oncolojia",
+                "sala onco", "7122", "122"
+            ],
+            "respuestas": [
+                "Espacio destinado para la atencion medica directa y procedimientos a pacientes pediatricos con enfermedades oncohematologicas, facilitando su cuidado y monitoreo clinico."
+            ]
+        },
+        {
+            "tag": "nutricion_onco_pediatrico",
+            "preguntas": [
+                "onco nutricion", "oncologico nutricion", "oncolojico nutricion", "oncologica nutricion", "oncolojica nutricion",
+                "oncologia nutricion", "oncolojia nutricion", "nutricion onco", "nutricion oncologico", "nutricion oncolojico",
+                "nutricion oncologica", "nutricion oncolojica", "nutricion oncologia", "nutricion oncolojia", "onco nutrision",
+                "oncologico nutrision", "oncolojico nutrision", "oncologica nutrision", "oncolojica nutrision", "oncologia nutrision",
+                "oncolojia nutrision", "nutrision onco", "nutrision oncologico", "nutrision oncolojico", "nutrision oncologica",
+                "nutrision oncolojica", "nutrision oncologia", "nutrision oncolojia", "7125", "125"
+            ],
+            "respuestas": [
+                "Se encarga de la evaluacion y seguimiento nutricional de pacientes pediatricos con enfermedades oncohematologicas, asegurando un soporte alimenticio adecuado durante su tratamiento."
+            ]
+        },
+        {
+            "tag": "anatomia_patologica",
+            "preguntas": [
+                "anato", "anatomia", "anatomia patologica", "anatomia patologia", "anatomia patolojica",
+                "patologia", "patologias", "patologica", "patolojia", "patolojias",
+                "patolojica", "7077", "077", "77",
+
+                "eri",
+                "eri pena",
+                "eri peña",
+                "eri martinez",
+                "pena eri",
+                "peña eri",
+                "martinez eri",
+                "pena martinez",
+                "martinez pena",
+                "eri pena martinez",
+                "pena martinez eri",
+                "pat eri pena martinez",
+                "patologo eri pena",
+                "contacto eri pena martinez",
+                "pena martinez"
+            ],
+            "respuestas": [
+                "Se encarga del analisis de muestras biologicas para el diagnostico de enfermedades, contribuyendo al tratamiento oportuno y seguimiento de pacientes pediatricos mediante estudios histopatologicos, citologicos y biopsias."
+            ]
+        },
+        {
+            "tag": "quirofano_1_2",
+            "preguntas": [
+                "1 qx", "2 qx", "qx 1", "qx 2", "1 quirofano",
+                "2 quirofano", "quirofano 1", "quirofano 2", "quirofano uno", "quirofano dos",
+                "qx uno", "qx dos", "quirofanos 1 y 2", "qx 1 2", "qx 1 y 2",
+                "quirofanos uno y dos", "qx uno y dos", "quirofanos", "kirofano 1", "kirofano 2", "7078", "078", "78"
+            ],
+            "respuestas": [
+                "Espacios destinados a procedimientos quirurgicos programados y de urgencia, equipados con tecnologia especializada para la atencion segura de pacientes pediatricos."
+            ]
+        },
+        {
+            "tag": "rayos_x",
+            "preguntas": [
+                "x", "equis", "placa", "placas", "rayo",
+                "rayos", "placa x", "rayos x", "raios x", "rayos equis",
+                "rayos equis x", "imagenologia", "imagenes", "7080", "080", "80", "7081", "081", "81",
+                "7115", "115", "7116", "116", "7117", "117",
+
+                "jose guadalupe",
+                "guadalupe jose",
+                "jose mendoza",
+                "guadalupe mendoza",
+                "jose flores",
+                "guadalupe flores",
+                "mendoza flores",
+                "flores mendoza",
+                "jose guadalupe mendoza",
+                "jose guadalupe flores",
+                "guadalupe mendoza flores",
+                "jose mendoza flores",
+                "dr jose guadalupe mendoza flores",
+                "doctor jose guadalupe mendoza",
+                "dr mendoza flores",
+                "contacto jose guadalupe mendoza",
+                "mendoza flores jose guadalupe"
+            ],
+            "respuestas": [
+                "Incluye diferentes espacios dedicados a la obtencion de imagenes diagnosticas como placas, ultrasonido y tomografia, asi como oficinas administrativas y recepcion para la gestion de estudios."
+            ]
+        },
+        {
+            "tag": "recursos_financieros",
+            "preguntas": [
+                "rf", "financiero", "financieros", "finansiero", "7082", "082", "82",
+                "finansieros", "recurso financiero", "recursos financiero", "recurso financieros", "recursos financieros",
+                "recurso finansiero", "recursos finansiero", "recurso finansieros", "recursos finansieros",
+
+                "marlenne",
+                "karime",
+                "bolado",
+                "marlenne karime",
+                "karime marlenne",
+                "marlenne osuna",
+                "karime osuna",
+                "marlenne bolado",
+                "karime bolado",
+                "osuna bolado",
+                "bolado osuna",
+                "marlenne karime osuna",
+                "marlenne karime bolado",
+                "karime osuna bolado",
+                "marlenne osuna bolado",
+                "lic marlenne karime osuna bolado",
+                "licenciada marlenne karime",
+                "contacto marlenne osuna bolado",
+                "osuna bolado marlenne karime"
+            ],
+            "respuestas": [
+                "Gestiona los recursos economicos del hospital, coordinando presupuestos, pagos y procesos administrativos para asegurar el funcionamiento financiero institucional."
+            ]
+        },
+        {
+            "tag": "recursos_humanos",
+            "preguntas": [
+                "rh", "contratos", "contrato", "humanos", "humano", "7083", "083", "83", "7084", "084", "84", "7103", "103",
+                "umanos", "umano", "recursos humanos", "recursos humano", "recursos umanos",
+
+                "hermelinda",
+                "hermelinda avendano",
+                "avendano hermelinda",
+                "hermelinda gutierrez",
+                "avendano gutierrez",
+                "gutierrez hermelinda",
+                "gutierrez avendano",
+                "hermelinda avendano gutierrez",
+                "hermelinda gutierrez avendano",
+                "lic hermelinda avendano gutierrez",
+                "licenciada hermelinda avendano",
+                "contacto hermelinda avendano gutierrez",
+                "avendano gutierrez hermelinda"
+            ],
+            "respuestas": [
+                "Se encarga de la administracion del personal del hospital, incluyendo contrataciones, control de asistencia, capacitacion y procesos laborales del equipo de trabajo."
+            ]
+        },
+        {
+            "tag": "servicios_generales",
+            "preguntas": [
+                "servicios", "servisios", "servicio", "servisio", "serbicios",
+                "serbisios", "serbicio", "serbisio", "generales", "general", "7087", "087", "87",
+                "servicios generales", "servisios generales", "servicio generales", "servisio generales", "serbicios generales",
+                "serbisios generales", "serbicio generales", "serbisio generales",
+
+                "ochoa",
+                "arellano",
+                "jose luis",
+                "luis jose",
+                "jose ochoa",
+                "luis ochoa",
+                "jose arellano",
+                "luis arellano",
+                "ochoa arellano",
+                "arellano ochoa",
+                "jose luis ochoa",
+                "jose luis arellano",
+                "luis ochoa arellano",
+                "jose ochoa arellano",
+                "ing jose luis ochoa arellano",
+                "ingeniero jose luis ochoa",
+                "contacto jose luis ochoa",
+                "ochoa arellano jose luis"
+            ],
+            "respuestas": [
+                "Se encarga del mantenimiento, limpieza, transporte y apoyo logistico para el funcionamiento diario del hospital, asegurando un entorno seguro y ordenado para pacientes y personal."
+            ]
+        },
+        {
+            "tag": "subdireccion",
+            "preguntas": [
+                "subdireccion", "subdirecsion", "subdirecciones", "subdirecsiones", "sub direccion",
+                "sub direcsion", "sub direcciones", "sub direcsiones", "sutdireccion", "sutdirecsion",
+                "sutdirecciones", "sutdirecsiones", "sut direccion", "sut direcsion", "sut direcciones",
+                "sut direcsiones"
+            ],
+            "respuestas": [
+                "La Subdirección se encarga de supervisar y coordinar distintas áreas del hospital, brindando apoyo en la gestión operativa, administrativa y médica según corresponda a su ámbito de acción. <b>Selecciona un área para saber más información</b>."
+            ]
+        },
+        {
+            "tag": "subdireccion_planeacion",
+            "preguntas": [
+                "planeacion subdireccion", "planeacion subdirecsion", "planeacion subdirecciones", "planeacion subdirecsiones", "planeacion sub direccion", "planeacion sub direcsion", "planeacion sub direcciones", "planeacion sub direcsiones",
+                "planeasion subdireccion", "planeasion subdirecsion", "planeasion subdirecciones", "planeasion subdirecsiones", "planeasion sub direccion", "planeasion sub direcsion", "planeasion sub direcciones", "planeasion sub direcsiones",
+                "planificacion subdireccion", "planificacion subdirecsion", "planificacion subdirecciones", "planificacion subdirecsiones", "planificacion sub direccion", "planificacion sub direcsion", "planificacion sub direcciones", "planificacion sub direcsiones",
+                "planificasion subdireccion", "planificasion subdirecsion", "planificasion subdirecciones", "planificasion subdirecsiones", "planificasion sub direccion", "planificasion sub direcsion", "planificasion sub direcciones", "planificasion sub direcsiones",
+                "planeaciones subdireccion", "planeaciones subdirecsion", "planeaciones subdirecciones", "planeaciones subdirecsiones", "planeaciones sub direccion", "planeaciones sub direcsion", "planeaciones sub direcciones", "planeaciones sub direcsiones",
+                "planeasiones subdireccion", "planeasiones subdirecsion", "planeasiones subdirecciones", "planeasiones subdirecsiones", "planeasiones sub direccion", "planeasiones sub direcsion", "planeasiones sub direcciones", "planeasiones sub direcsiones",
+                "planificaciones subdireccion", "planificaciones subdirecsion", "planificaciones subdirecciones", "planificaciones subdirecsiones", "planificaciones sub direccion", "planificaciones sub direcsion", "planificaciones sub direcciones", "planificaciones sub direcsiones",
+                "planificasiones subdireccion", "planificasiones subdirecsion", "planificasiones subdirecciones", "planificasiones subdirecsiones", "planificasiones sub direccion", "planificasiones sub direcsion", "planificasiones sub direcciones", "planificasiones sub direcsiones",
+                "7088", "088", "88",
+
+                "ivan",
+                "rafael",
+                "ivan rafael",
+                "rafael ivan",
+                "ivan mendoza",
+                "rafael mendoza",
+                "ivan zuniga",
+                "rafael zuniga",
+                "mendoza zuniga",
+                "zuniga mendoza",
+                "ivan rafael mendoza",
+                "ivan rafael zuniga",
+                "rafael mendoza zuniga",
+                "ivan mendoza zuniga",
+                "m ivan rafael mendoza zuniga",
+                "maestro ivan rafael mendoza",
+                "contacto ivan rafael mendoza",
+                "mendoza zuniga ivan rafael"
+            ],
+            "respuestas": [
+                "Coordina los procesos de planificacion estrategica, proyectos institucionales y evaluacion de resultados para mejorar la gestion hospitalaria y asegurar el cumplimiento de los objetivos del hospital."
+            ]
+        },
+        {
+            "tag": "subdireccion_servicios_auxiliares",
+            "preguntas": [
+                "aux", "auxilia", "auxiliares", "auxiliar", "ausilia",
+                "ausiliares", "ausiliar", "aucilia", "auciliares", "auciliar", "7089", "089", "89",
+                "servicios auxiliares", "servicios aux", "subdireccion de servicios auxiliares", "subdireccion servicios auxiliares", "sub direccion de servicios auxiliares",
+                "sub direccion servicios auxiliares", "subdireccion de servisios auxiliares", "sub direccion de servisios auxiliares",
+
+                "cintia",
+                "cinthia",
+                "gabriela",
+                "torres",
+                "galicia",
+                "cynthia gabriela",
+                "gabriela cynthia",
+                "cynthia torres",
+                "gabriela torres",
+                "cynthia galicia",
+                "gabriela galicia",
+                "torres galicia",
+                "galicia torres",
+                "cynthia gabriela torres",
+                "cynthia gabriela galicia",
+                "gabriela torres galicia",
+                "cynthia torres galicia",
+                "dra cynthia gabriela torres galicia",
+                "doctora cynthia gabriela torres",
+                "contacto cynthia gabriela torres",
+                "torres galicia cynthia gabriela"
+            ],
+            "respuestas": [
+                "Gestiona y supervisa los servicios de apoyo diagnostico y terapeutico, como laboratorio, imagenologia e inhaloterapia, asegurando su funcionamiento eficiente y coordinado dentro del hospital."
+            ]
+        },
+        {
+            "tag": "subdireccion_medica",
+            "preguntas": [
+                "sub medica", "subdireccion medica", "subdirecsion medica", "sub direccion medica", "sub direcsion medica",
+                "subdireccion de medicina", "subdirecsion de medicina", "subdireccion de medisina", "subdirecsion de medisina",
+                "sub direccion de medicina", "sub direcsion de medicina", "sub direccion de medisina", "sub direcsion de medisina",
+                "7090", "090", "90",
+
+                "de jesus",
+                "bodart",
+                "roman",
+                "fernando de jesus",
+                "de jesus fernando",
+                "fernando bodart",
+                "jesus bodart",
+                "fernando roman",
+                "jesus roman",
+                "bodart roman",
+                "roman bodart",
+                "fernando de jesus bodart",
+                "fernando de jesus roman",
+                "de jesus bodart roman",
+                "fernando bodart roman",
+                "dr fernando de jesus bodart roman",
+                "doctor fernando de jesus bodart",
+                "contacto fernando de jesus bodart",
+                "bodart roman fernando de jesus",
+
+                "laura",
+                "laura elena",
+                "elena laura",
+                "laura salazar",
+                "elena salazar",
+                "laura castro",
+                "elena castro",
+                "salazar castro",
+                "castro salazar",
+                "laura elena salazar",
+                "laura elena castro",
+                "elena salazar castro",
+                "laura salazar castro",
+                "dra laura elena salazar castro",
+                "doctora laura elena salazar",
+                "contacto laura elena salazar",
+                "salazar castro laura elena"
+            ],
+            "respuestas": [
+                "Supervisa y coordina la atencion medica dentro del hospital, garantizando la calidad y eficiencia en los servicios clinicos, asi como el cumplimiento de normas y protocolos de salud."
+            ]
+        },
+        {
+            "tag": "subdireccion_secretaria",
+            "preguntas": [
+                "secretaria", "sub secretaria", "subdireccion secretaria", "sub direccion secretaria",
+                "subdireccion de secretaria", "sub direccion de secretaria", "subdireccion sekretaria", "sub direccion sekretaria", 
+                "secretaria de subdireccion", "7091", "091", "91"
+            ],
+            "respuestas": [
+                "Brinda apoyo administrativo y de organizacion a las diferentes subdirecciones del hospital, facilitando la comunicacion interna, el manejo de documentos y la atencion a solicitudes institucionales."
+            ]
+        },
+        {
+            "tag": "subdireccion_enfermeria",
+            "preguntas": [
+                "subdireccion de enfermaria", "subdireccion enfermaria", "sub direccion de enfermaria", "sub direccion enfermaria", "sutdireccion de enfermaria",
+                "sutdireccion enfermaria", "sut direccion de enfermaria", "sut direccion enfermaria", "subdirecsion de enfermaria", "subdirecsion enfermaria",
+                "sub direcsion de enfermaria", "sub direcsion enfermaria", "sutdirecsion de enfermaria", "sutdirecsion enfermaria", "sut direcsion de enfermaria",
+                "sut direcsion enfermaria", "subdireccion de enfermeria", "subdireccion de enferme", "subdireccion de enfer", "subdireccion de enf",
+                "subdireccion enfermeria", "subdireccion enferme", "subdireccion enfer", "subdireccion enf", "sub direccion de enfermeria",
+                "sub direccion de enferme", "sub direccion de enfer", "sub direccion de enf", "sub direccion enfermeria", "sub direccion enferme",
+                "sub direccion enfer", "sub direccion enf", "sutdireccion de enfermeria", "sutdireccion de enferme", "sutdireccion de enfer",
+                "sutdireccion de enf", "sutdireccion enfermeria", "sutdireccion enferme", "sutdireccion enfer", "sutdireccion enf",
+                "sut direccion de enfermeria", "sut direccion de enferme", "sut direccion de enfer", "sut direccion de enf", "sut direccion enfermeria",
+                "sut direccion enferme", "sut direccion enfer", "sut direccion enf", "subdirecsion de enfermeria", "subdirecsion de enferme",
+                "subdirecsion de enfer", "subdirecsion de enf", "subdirecsion enfermeria", "subdirecsion enferme", "subdirecsion enfer", "subdirecsion enf",
+                "sub direcsion de enfermeria", "sub direcsion de enferme", "sub direcsion de enfer", "sub direcsion de enf", "sub direcsion enfermeria",
+                "sub direcsion enferme", "sub direcsion enfer", "sub direcsion enf", "sutdirecsion de enfermeria", "sutdirecsion de enferme",
+                "sutdirecsion de enfer", "sutdirecsion de enf", "sutdirecsion enfermeria", "sutdirecsion enferme", "sutdirecsion enfer", "sutdirecsion enf",
+                "sut direcsion de enfermeria", "sut direcsion de enferme", "sut direcsion de enfer", "sut direcsion de enf", "sut direcsion enfermeria",
+                "sut direcsion enferme", "sut direcsion enfer", "sut direcsion enf", "enfermeria", "enfermera", "enfermeras", "enfermero",
+                "enfermeros", "enfermos", "enfermo", "enferme", "enf", "enfer", "enfermera", "enfermaria",
+
+                "mixtli",
+                "adilene",
+                "mixtli adilene",
+                "adilene mixtli",
+                "mixtli pena",
+                "adilene pena",
+                "mixtli lopez",
+                "adilene lopez",
+                "pena lopez",
+                "lopez pena",
+                "mixtli adilene pena",
+                "mixtli adilene lopez",
+                "adilene pena lopez",
+                "mixtli pena lopez",
+                "mixtli adilene pena lopez",
+                "pena lopez mixtli adilene",
+                "me mixtli adilene pena lopez",
+                "maestra mixtli adilene pena"
+            ],
+            "respuestas": [
+                "La Subdirección de Enfermería coordina y supervisa los servicios de enfermería en el hospital, asegurando la calidad de la atención, la gestión del personal y el cumplimiento de los lineamientos institucionales. <b>Selecciona un área para saber más información</b>."
+            ]
+        },
+        {
+            "tag": "terapia_intensiva",
+            "preguntas": [
+                "intensiva", "intensiba", "intenciva", "intenciba", "terapia intensiva", "terapia intenciva",
+                "terapia intenciba", "terapia intensiba", "7092", "092", "92", "7093", "093", "93",
+
+                "melchor",
+                "vianey melchor",
+                "vianei melchor",
+                "melchor vianey",
+                "vianey garcia",
+                "melchor garcia",
+                "garcia melchor",
+                "garcia vianey",
+                "vianey melchor garcia",
+                "melchor garcia vianey",
+                "dra vianey melchor garcia",
+                "doctora vianey melchor",
+                "contacto vianey melchor garcia",
+                "melchor garcia vianey",
+
+                "yanez",
+                "soledad ibarra",
+                "ibarra soledad",
+                "soledad yanez",
+                "ibarra yanez",
+                "yanez ibarra",
+                "ibarra soledad yanez",
+                "soledad ibarra yanez",
+                "enf soledad ibarra yanez",
+                "enfermera soledad ibarra",
+                "contacto soledad ibarra yanez",
+                "ibarra yanez soledad"
+            ],
+            "respuestas": [
+                "Atiende a pacientes pediatricos en estado critico que requieren monitoreo y soporte vital especializado las 24 horas, con personal altamente capacitado y tecnologia avanzada para cuidados intensivos."
+            ]
+        },
+        {
+            "tag": "trabajo_social",
+            "preguntas": [
+                "ts", "trabajo social", "trabajo",
+                "social", "trabajo social hospital", "departamento de trabajo social",
+                "oficina de trabajo social", "quien esta en trabajo social", "quien es el encargado de trabajo social", 
+                "trabajo sosial", "trabajo socal",
+
+                "de la cruz",
+                "olguin",
+                "maria de la cruz",
+                "de la cruz maria",
+                "maria olguin",
+                "cruz olguin",
+                "maria mendoza",
+                "cruz mendoza",
+                "olguin mendoza",
+                "mendoza olguin",
+                "maria de la cruz olguin",
+                "maria de la cruz mendoza",
+                "de la cruz olguin mendoza",
+                "maria olguin mendoza",
+                "lic maria de la cruz olguin mendoza",
+                "licenciada maria de la cruz",
+                "contacto maria de la cruz olguin",
+                "olguin mendoza maria de la cruz"
+
+            ],
+            "respuestas": [
+                "Brinda apoyo a los pacientes y sus familias en el ámbito social, emocional y administrativo, gestionando tramites, canalizaciones y seguimiento en casos que lo requieren. Se encuentran diferentes áreas administradas. <b>Selecciona un área para saber más información</b>."
+            ]
+        },
+        {
+            "tag": "trabajo_social_infectologia",
+            "preguntas": [
+                "trabajo social infectologia", "trabajo social hospital infectologia",
+                "trabajo social hospitalizacion infectologia", "trabajo sosial infectologia", "ts infectologia",
+                "ts hospital infectologia", "ts hospitalizacion infectologia", "trabajo socal infectologia", "trabajo social en infectologia",
+                "trabajo social de infectologia", "ts infectologia", "ts hospital infectologia", "ts hospitalizacion infectologia", 
+                "ts en infectologia", "ts de infectologia", "7094", "094", "94"
+            ],
+            "respuestas": [
+                "Apoya a los pacientes y sus familias en el area de infectologia, brindando orientacion social, gestion de tramites y canalizacion a recursos institucionales o externos cuando es necesario."
+            ]
+        },
+        {
+            "tag": "trabajo_social_neonatologia",
+            "preguntas": [
+                "trabajo social neonatologia", "trabajo social neonato", "trabajo social neo", "social neonatologia",
+                "trabajo social hospital neonatologia", "social neonato", "sosial neonato", "social neo",
+                "sosial neo", "oficina de trabajo social neonatologia", "departamento de trabajo social neonatologia", "quien esta en trabajo social neonatologia",
+                "quien es el encargado de trabajo social neonatologia", "informacion de trabajo social neonatologia", "me pueden ayudar en trabajo social neonatologia", "como funciona trabajo social neonatologia", "contacto trabajo social neonatologia",
+                "trabajo sosial neonatologia", "trabajo socal neonatologia", "trabajo social en neonatologia", "trabajo social de neonatologia", "ts neonatologia",
+                "ts neonato", "ts neo", "ts hospital neonatologia", "oficina de ts neonatologia", "departamento de ts neonatologia", "quien esta en ts neonatologia",
+                "quien es el encargado de ts neonatologia", "informacion de ts neonatologia", "me pueden ayudar en ts neonatologia", "como funciona ts neonatologia", "contacto ts neonatologia",
+                "ts en neonatologia", "ts de neonatologia", "7095", "095", "95"
+            ],
+            "respuestas": [
+                "Brinda acompañamiento y apoyo a las familias de recién nacidos hospitalizados, orientando en aspectos sociales, emocionales y administrativos durante su estancia en el área de neonatología."
+            ]
+        },
+        {
+            "tag": "trabajo_social_oficina",
+            "preguntas": [
+                "trabajo social oficina", "trabajo social ofisina", "trabajo sosial oficina", "trabajo sosial ofisina", "ts oficina",
+                "ts ofisina", "oficina trabajo social", "ofisina trabajo social", "oficina trabajo sosial", "ofisina trabajo sosial",
+                "oficina ts", "ofisina ts", "social oficina", "social ofisina", "sosial oficina",
+                "sosial ofisina", "trabajo social hospital oficina", "trabajo social hospital ofisina", "trabajo sosial hospital oficina", "trabajo sosial hospital ofisina",
+                "7096", "096", "96"
+            ],
+            "respuestas": [
+                "Atiende a los usuarios que requieren orientación sobre servicios sociales, apoyos institucionales y trámites generales, canalizando a las áreas correspondientes según cada caso."
+            ]
+        },
+        {
+            "tag": "trabajo_social_qx_ambulatorio",
+            "preguntas": [
+                "trabajo social qx", "trabajo social qx ambulatorio", "trabajo social ambulatorio", "trabajo social quirurgico", "trabajo social quirurgico ambulatorio",
+                "trabajo social cirugia", "trabajo social cirugia ambulatorio", "trabajo sosial qx", "trabajo sosial qx ambulatorio", "trabajo sosial ambulatorio",
+                "trabajo sosial quirurgico", "trabajo sosial quirurgico ambulatorio", "trabajo sosial cirugia", "trabajo sosial cirugia ambulatorio", "ts qx",
+                "ts qx ambulatorio", "ts ambulatorio", "ts quirurgico", "ts quirurgico ambulatorio",
+                "ts cirugia", "ts cirugia ambulatorio", "7097", "097", "97"
+            ],
+            "respuestas": [
+                "Brinda apoyo a pacientes de cirugía ambulatoria en aspectos sociales y administrativos, facilitando la comunicación con familiares y otros servicios para asegurar una atención integral y coordinada."
+            ]
+        },
+        {
+            "tag": "trabajo_social_terapia_intensiva",
+            "preguntas": [
+                "trabajo social terapia intensiva", "trabajo social terapia intensiba", "trabajo social terapia", "trabajo social en terapia intensiva", "trabajo social en terapia intensiba",
+                "trabajo social en terapia", "trabajo sosial terapia intensiva", "trabajo sosial terapia intensiba", "trabajo sosial terapia", "trabajo sosial en terapia intensiva",
+                "trabajo sosial en terapia intensiba", "trabajo sosial en terapia", "ts terapia intensiva", "ts terapia intensiba", "ts terapia",
+                "ts intensiva", "ts intensiba", "ts en terapia", "7098", "098", "98"
+            ],
+            "respuestas": [
+                "Proporciona acompañamiento social y orientación a las familias de pacientes en terapia intensiva, facilitando trámites y comunicación con el equipo médico para garantizar una atención humana y coordinada."
+            ]
+        },
+        {
+            "tag": "trabajo_social_urgencias",
+            "preguntas": [
+                "trabajo social urgencias", "trabajo social urgensias", "trabajo social urgencia", "trabajo social urgensia", "trabajo social urgen",
+                "trabajo sosial urgencias", "trabajo sosial urgensias", "trabajo sosial urgencia", "trabajo sosial urgensia", "trabajo sosial urgen",
+                "ts urgencias", "ts urgensias", "ts urgencia", "ts urgensia", "ts urgen", "7099", "099", "99"
+            ],
+            "respuestas": [
+                "Brinda apoyo emocional, orientación y gestión de trámites a familiares y pacientes en situaciones críticas dentro del área de urgencias, coordinando con el personal médico para asegurar una atención eficiente y humanizada."
+            ]
+        },
+        {
+            "tag": "trabajo_social_jefatura",
+            "preguntas": [
+                "trabajo social jefa", "trabajo social jefatura", "trabajo social jefaturas",
+                "trabajo sosial jefa", "trabajo sosial jefatura", "trabajo sosial jefaturas",
+                "ts jefa", "ts jefatura", "ts jefaturas", "7114", "114"
+            ],
+            "respuestas": [
+                "Gestiona, supervisa y coordina las actividades del personal de trabajo social en las distintas áreas del hospital, asegurando la calidad en la atención social brindada a pacientes y familias."
+            ]
+        },
+        {
+            "tag": "urgencias",
+            "preguntas": [
+                "urgencias", "urgensias", "urgensia", "urgencia", "urg", "7100", "100", "7101", "101", "7109", "109", "7110", "110",
+                "caja urg pediatrico", "caja urgencias pediatrico", "caja urg", "caja urgencias", "caja urgensias",
+                
+                "edgardo",
+                "tostado",
+                "edgardo tostado",
+                "tostado edgardo",
+                "edgardo morales",
+                "tostado morales",
+                "morales tostado",
+                "edgardo tostado morales",
+                "tostado morales edgardo",
+                "dr edgardo tostado morales",
+                "doctor edgardo tostado",
+                "contacto edgardo tostado morales",
+                "tostado morales edgardo",
+
+                "alejandra",
+                "alejandra osuna",
+                "osuna alejandra",
+                "alejandra garcia",
+                "osuna garcia",
+                "garcia osuna",
+                "alejandra osuna garcia",
+                "osuna garcia alejandra",
+                "enf alejandra osuna garcia",
+                "enfermera alejandra osuna",
+                "contacto alejandra osuna garcia",
+                "osuna garcia alejandra"
+            ],
+            "respuestas": [
+                "Brinda atencion medica inmediata y especializada a pacientes pediatricos en situacion de urgencia. Cuenta con sala de atencion, oficina administrativa y jefatura responsable de coordinar el area."
+            ]
+        },
+        {
+            "tag": "vigilancia_camilleros",
+            "preguntas": [
+                "vigila", "vigilancia", "vigilancias", "vigilansia", "vigilansias",
+                "bigila", "bigilancia", "bigilancias", "bigilansia", "bigilansias",
+                "camillero", "camilleros", "camiyero", "camiyeros", "7102", "102"
+            ],
+            "respuestas": [
+                "Se encarga de la seguridad del hospital y del traslado seguro de pacientes dentro de las instalaciones. El equipo incluye personal de vigilancia y camilleros distribuidos en puntos estrategicos para atencion rapida."
+            ]
+        },
+        {
+            "tag": "insabi",
+            "preguntas": [
+                "insa", "insabi", "insavi", "sabi", "savi",
+                "bienestar", "vienestar", "instituto de salud para el bienestar", "instituto de salud para el vienestar", "instituto salud para bienestar",
+                "instituto salud para vienestar", "seguro", "popular", "seguro popular", "7104", "104",
+
+                "rodriguez",
+                "rodrigues",
+                "maria luisa",
+                "luisa maria",
+                "maria rodriguez",
+                "luisa rodriguez",
+                "maria leon",
+                "luisa leon",
+                "rodriguez leon",
+                "leon rodriguez",
+                "maria luisa rodriguez",
+                "maria luisa leon",
+                "luisa rodriguez leon",
+                "maria rodriguez leon",
+                "dra maria luisa rodriguez leon",
+                "doctora maria luisa rodriguez",
+                "contacto maria luisa rodriguez",
+                "rodriguez leon maria luisa"
+            ],
+            "respuestas": [
+                "Instituto de Salud para el Bienestar. Proporciona servicios de salud y medicamentos gratuitos a personas sin seguridad social, gestionando afiliaciones y orientacion sobre la cobertura del programa dentro del hospital."
+            ]
+        },
+        {
+            "tag": "banco_sangre_ts",
+            "preguntas": [
+                "banco de sangre", "bancos de sangre", "banco sangre", "bancos sangre",
+                "banco de sangre ts", "bancos de sangre ts", "banco sangre ts", "bancos sangre ts", "sangre", "7105", "105",
+                "sangres", "sanguineo", "sanguineos", "sangineo", "sangineos", "sanguinio", "sanguinios", "sanginio", "sanginios", 
+                
+                "sazueta",
+                "francisco sazueta",
+                "sazueta francisco",
+                "francisco quintero",
+                "sazueta quintero",
+                "quintero sazueta",
+                "francisco sazueta quintero",
+                "sazueta quintero francisco",
+                "dr francisco sazueta quintero",
+                "doctor francisco sazueta",
+                "contacto francisco sazueta quintero",
+                "sazueta quintero francisco"
+            ],
+            "respuestas": [
+                "Se brinda orientación, apoyo y acompañamiento a los familiares y pacientes que requieren servicios transfusionales, facilitando la atención con enfoque humano y profesional."
+            ]
+        },
+        {
+            "tag": "adquisiciones",
+            "preguntas": [
+                "adquirir", "adquiere", "adquirio", "adquirieron", "adquisiones",
+                "adquisiciones", "adquisicion", "adquiciones", "adquiciciones", "adquicicion",
+                "adquisisiones", "adquisision", "adquicisiones", "adquicision", "atquirir",
+                "atquiere", "atquirio", "atquirieron", "atquisiones", "atquisiciones",
+                "atquisicion", "atquiciones", "atquiciciones", "atquicicion", "atquisisiones",
+                "atquisision", "atquicisiones", "atquicision", "7106", "106",
+
+                "manuela",
+                "collantes",
+                "manuela collantes",
+                "collantes manuela",
+                "manuela garcia",
+                "collantes garcia",
+                "garcia collantes",
+                "manuela collantes garcia",
+                "collantes garcia manuela",
+                "lic manuela collantes garcia",
+                "licenciada manuela collantes",
+                "contacto manuela collantes garcia",
+                "collantes garcia manuela"
+            ],
+            "respuestas": [
+                "Responsable de la gestión y compra de bienes y servicios necesarios para el funcionamiento del hospital, asegurando transparencia y eficiencia en los procesos administrativos."
+            ]
+        },
+        {
+            "tag": "soporte_tecnico",
+            "preguntas": [
+                "soporte tecnico", "tecnico en sistemas", "ayuda con computadoras", "ayuda tecnica", "ayuda con el sistema",
+                "fallas en el sistema", "ayuda con el equipo", "reporte tecnico", "tecnologia soporte tecnico", "soporte de computo",
+                "problemas con la computadora", "soporte informatico", "sistemas soporte tecnico", "soporte",
+                "soporte hospital", "soporte sistemas", "tecnico", "tecnicos",
+                "tecnico de sistemas", "tecnico hospital", "tecnico computadoras",
+                "reporte de soporte", "tecnico de guardia", "soporte de sistemas", "equipo tecnico", "unidad de soporte",
+                "personal tecnico", "contacto tecnico", "7108", "108",
+
+                "ozmin",
+                "osmin",
+                "ozmi",
+                "osmi",
+                "milton"
+            ],
+            "respuestas": [
+                "Esta area se encarga de brindar asistencia relacionada con sistemas informáticos, equipos de cómputo y tecnología dentro del hospital, resolviendo fallas técnicas y garantizando el buen funcionamiento de los recursos digitales."
+            ]
+        },
+        {
+            "tag": "subdireccion_administrativa_sec",
+            "preguntas": [
+                "subdireccion administrativa sec", "subdireccion administrativa secre", "subdireccion administrativa secretaria", "subdireccion administrativa secretarias", "subdirecsion administrativa sec",
+                "subdirecsion administrativa secre", "subdirecsion administrativa secretaria", "subdirecsion administrativa secretarias", "sub direccion administrativa sec", "sub direccion administrativa secre",
+                "sub direccion administrativa secretaria", "sub direccion administrativa secretarias", "sub direcsion administrativa sec", "sub direcsion administrativa secre", "sub direcsion administrativa secretaria",
+                "sub direcsion administrativa secretarias", "subdirec administrativa sec", "subdirec administrativa secre", "subdirec administrativa secretaria", "subdirec administrativa secretarias",
+                "sub administrativa sec", "sub administrativa secre", "sub administrativa secretaria", "sub administrativa secretarias", "subdireccion administratiba sec",
+                "subdireccion administratiba secre", "subdireccion administratiba secretaria", "subdireccion administratiba secretarias", "subdirecsion administratiba sec", "subdirecsion administratiba secre",
+                "subdirecsion administratiba secretaria", "subdirecsion administratiba secretarias", "sub direccion administratiba sec", "sub direccion administratiba secre", "sub direccion administratiba secretaria",
+                "sub direccion administratiba secretarias", "sub direcsion administratiba sec", "sub direcsion administratiba secre", "sub direcsion administratiba secretaria", "sub direcsion administratiba secretarias",
+                "subdirec administratiba sec", "subdirec administratiba secre", "subdirec administratiba secretaria", "subdirec administratiba secretarias", "sub administratiba sec",
+                "sub administratiba secre", "sub administratiba secretaria", "sub administratiba secretarias", "7111", "111"
+            ],
+            "respuestas": [
+                "Responsable de coordinar y supervisar las áreas administrativas del hospital, incluyendo la gestión de recursos, personal y apoyo a las operaciones institucionales desde el área administrativa central."
+            ]
+        },
+        {
+            "tag": "surt_recetas",
+            "preguntas": [
+                "surt", "surtido", "surtidos", "surtidor", "surtir",
+                "surtiendo", "surtimiento", "surtimientos", "receta", "recetas",
+                "reseta", "resetas", "7112", "112"
+            ],
+            "respuestas": [
+                "El área encargada de surtir recetas se encarga de proporcionar los medicamentos indicados por el personal médico, siguiendo un proceso controlado para garantizar su correcta entrega al paciente."
+            ]
+        },
+        {
+            "tag": "investigacion_medica",
+            "preguntas": [
+                "investigacion medica", "investigaciones medicas", "unidad de investigacion medica", "unidad de investigaciones medicas", "inbestigacion medica",
+                "inbestigaciones medicas", "unidad de inbestigacion medica", "unidad de inbestigaciones medicas", "investigasion medica", "investigasiones medicas",
+                "unidad de investigasion medica", "unidad de investigaciones medicas", "inbestigasion medica", "inbestigasiones medicas", "unidad de inbestigasion medica",
+                "unidad de inbestigasiones medicas", "medica investigacion", "medicas investigaciones", "7121", "121",
+
+                "paez",
+                "alberto paez",
+                "paez alberto",
+                "alberto salazar",
+                "paez salazar",
+                "salazar paez",
+                "alberto paez salazar",
+                "paez salazar alberto",
+                "dr alberto paez salazar",
+                "doctor alberto paez",
+                "contacto alberto paez salazar",
+                "paez salazar alberto"
+            ],
+            "respuestas": [
+                "Se encarga de realizar estudios científicos y clínicos que contribuyen al conocimiento y mejora de la salud pediátrica. Trabajan en conjunto con diversas especialidades para impulsar la innovación en tratamientos y diagnósticos."
+            ]
+        },
+        {
+            "tag": "programa_vih",
+            "preguntas": [
+                "vih",
+                "v i h",
+                "bih",
+                "b i h", "7123", "123"
+            ],
+            "respuestas": [
+                "El Programa VIH ofrece atención integral y especializada a pacientes pediátricos con VIH, incluyendo diagnóstico, tratamiento, seguimiento médico y apoyo psicológico para los pacientes y sus familias."
+            ]
+        },
+        {
+            "tag": "hemodialisis",
+            "preguntas": [
+                "hemodialisis", "jemodialisis", "emodialisis", "hemo dialisis", "emo dialisis",
+                "dialisis", "hemodialisi", "jemodialisi", "emodialisi", "hemo dialisi",
+                "emo dialisi", "dialisi", "hemodialicis", "jemodialicis", "emodialicis",
+                "hemo dialicis", "emo dialicis", "dialicis", "hemodialici", "jemodialici",
+                "emodialici", "hemo dialici", "emo dialici", "dialici", "7124", "124",
+
+                "iyali",
+                "margarita",
+                "corrales",
+                "cambero",
+                "iyali margarita",
+                "margarita iyali",
+                "iyali corrales",
+                "margarita corrales",
+                "iyali cambero",
+                "margarita cambero",
+                "corrales cambero",
+                "cambero corrales",
+                "iyali margarita corrales",
+                "iyali margarita cambero",
+                "margarita corrales cambero",
+                "iyali corrales cambero",
+                "dra iyali margarita corrales cambero",
+                "doctora iyali margarita corrales",
+                "contacto iyali margarita corrales",
+                "corrales cambero iyali margarita",
+
+                "scanda",
+                "camacho",
+                "scanda maria",
+                "maria scanda",
+                "scanda ureta",
+                "maria ureta",
+                "scanda camacho",
+                "maria camacho",
+                "ureta camacho",
+                "camacho ureta",
+                "scanda maria ureta",
+                "scanda maria camacho",
+                "maria ureta camacho",
+                "scanda ureta camacho",
+                "enf scanda maria ureta camacho",
+                "enfermera scanda maria ureta",
+                "contacto scanda maria ureta",
+                "ureta camacho scanda maria"
+            ],
+            "respuestas": [
+                "El área de Hemodiálisis brinda atención especializada a pacientes pediátricos con enfermedades renales que requieren terapias sustitutivas, ofreciendo un tratamiento seguro, integral y supervisado por personal capacitado."
+            ]
+        },
+        {
+            "tag": "qx",
+            "preguntas": [
+                "qx", "qxx", "qqxx", "qqx",
+                "quirofano", "quirofanos",
+
+                "soto",
+                "quintero",
+                "jesus oscar",
+                "oscar jesus",
+                "jesus soto",
+                "oscar soto",
+                "jesus quintero",
+                "oscar quintero",
+                "soto quintero",
+                "quintero soto",
+                "jesus oscar soto",
+                "jesus oscar quintero",
+                "oscar soto quintero",
+                "jesus soto quintero",
+                "dr jesus oscar soto quintero",
+                "doctor jesus oscar soto",
+                "dr soto quintero",
+                "contacto jesus oscar soto",
+                "soto quintero jesus oscar"
+            ],
+            "respuestas": [
+                "El área de quirófano brinda atención especializada para procedimientos quirúrgicos, garantizando condiciones óptimas de seguridad, higiene y personal capacitado para atender a los pacientes pediátricos. <b>Selecciona un área para saber más información</b>."
+            ]
+        },
+        {
+            "tag": "admisiones_qx",
+            "preguntas": [
+                "admision qx", "admisiones qx", "qx admision", "qx admisiones", "admicion qx",
+                "admiciones qx", "qx admicion", "qx admiciones", "admision quirofano", "admisiones quirofano",
+                "quirofano admision", "quirofano admisiones", "admicion quirofano", "admiciones quirofano", "quirofano admicion",
+                "quirofano admiciones", "atmision qx", "atmisiones qx", "qx atmision", "qx atmisiones",
+                "atmicion qx", "atmiciones qx", "qx atmicion", "qx atmiciones", "atmision quirofano",
+                "atmisiones quirofano", "quirofano atmision", "quirofano atmisiones", "atmicion quirofano", "atmiciones quirofano",
+                "quirofano atmicion", "quirofano atmiciones", "7113", "113"
+            ],
+            "respuestas": [
+                "El área de admisión quirófano se encarga de recibir y coordinar el ingreso de los pacientes programados para cirugía, asegurando el cumplimiento de protocolos previos a los procedimientos quirúrgicos."
+            ]
+        },
+        {
+            "tag": "admision_qx_ambulatorio",
+            "preguntas": [
+                "admision qx ambulatorio", "admisiones qx ambulatorio", "qx admision ambulatorio", "qx admisiones ambulatorio", "admicion qx ambulatorio",
+                "admiciones qx ambulatorio", "qx admicion ambulatorio", "qx admiciones ambulatorio", "admision quirofano ambulatorio", "admisiones quirofano ambulatorio",
+                "quirofano admision ambulatorio", "quirofano admisiones ambulatorio", "admicion quirofano ambulatorio", "admiciones quirofano ambulatorio", "quirofano admicion ambulatorio",
+                "quirofano admiciones ambulatorio", "atmision qx ambulatorio", "atmisiones qx ambulatorio", "qx atmision ambulatorio", "qx atmisiones ambulatorio",
+                "atmicion qx ambulatorio", "atmiciones qx ambulatorio", "qx atmicion ambulatorio", "qx atmiciones ambulatorio", "atmision quirofano ambulatorio",
+                "atmisiones quirofano ambulatorio", "quirofano atmision ambulatorio", "quirofano atmisiones ambulatorio", "atmicion quirofano ambulatorio", "atmiciones quirofano ambulatorio",
+                "quirofano atmicion ambulatorio", "quirofano atmiciones ambulatorio", "qx ambulatorio admision", "qx ambulatorio admisiones", "qx ambulatorio admicion",
+                "qx ambulatorio admiciones", "quirofano ambulatorio admision", "quirofano ambulatorio admisiones", "quirofano ambulatorio admicion", "quirofano ambulatorio admiciones",
+                "7127", "127"
+            ],
+            "respuestas": [
+                "Esta area gestiona el almacenamiento, control y dispensación de medicamentos, asegurando tratamientos seguros y eficaces conforme a indicaciones médicas. Para información sobre disponibilidad, consulta los canales oficiales."
+            ]
+        },
+        {
+            "tag": "jefe_qx_pediatrico",
+            "preguntas": [
+                "jefe qx", "jefe qx pedia", "jefe qx pediatria", "jefe qx pediatrico", "jefe quirofano",
+                "jefe quirofano pedia", "jefe quirofano pediatria", "jefe quirofano pediatrico", "7128", "128"
+            ],
+            "respuestas": [
+                "Responsable de supervisar y coordinar todas las actividades relacionadas con las cirugías pediátricas. Si necesitas ubicarlo, puedes acudir al área de quirófano o preguntar directamente en recepción para que te orienten."
+            ]
+        },
+        {
+            "tag": "piso3_qx_amm",
+            "preguntas": [
+                "piso3 qx amm", "piso3 quirofano amm", "piso3 amm qx", "piso3 amm quirofano", "piso3 qx ambulatorio",
+                "piso3 quirofano ambulatorio", "piso3 ambulatorio qx", "piso3 ambulatorio quirofano", "qx amm piso3", "quirofano amm piso3",
+                "amm qx piso3", "amm quirofano piso3", "qx ambulatorio piso3", "quirofano ambulatorio piso3", "ambulatorio qx piso3",
+                "ambulatorio quirofano piso3", "7132", "132"
+            ],
+            "respuestas": [
+                "Aquí se realizan procedimientos médicos programados que no requieren hospitalización prolongada. Puedes dirigirte a la recepción principal o preguntar en información para ser orientado correctamente."
+            ]
+        },
+        {
+            "tag": "banco_de_leche",
+            "preguntas": [
+                "banco de leche",
+                "banco leche",
+                "vanco de leche",
+                "vanco leche", "7129", "129"
+            ],
+            "respuestas": [
+                "El Banco de Leche Humana brinda atención especializada en la recolección, procesamiento y distribución de leche materna, con el fin de apoyar la nutrición de recién nacidos hospitalizados, especialmente los prematuros o con bajo peso al nacer."
+            ]
+        },
+        {
+            "tag": "piso_1",
+            "preguntas": [
+                "piso 1",
+                "piso1", "piso uno", "pisouno"
+            ],
+            "respuestas": [
+                "El Piso 1 del hospital alberga diferentes servicios médicos y administrativos. Te recomendamos acudir al módulo de información o recepción para orientación específica sobre las áreas que se encuentran en este piso."
+            ]
+        },
+        {
+            "tag": "piso_2",
+            "preguntas": [
+                "piso 2",
+                "piso2", "piso dos", "pisodos"
+            ],
+            "respuestas": [
+                "En el Piso 2 se encuentran servicios especializados del hospital. Para saber exactamente qué áreas están ubicadas ahí, acude al módulo de información."
+            ]
+        },
+        {
+            "tag": "piso_3",
+            "preguntas": [
+                "piso 3",
+                "piso3", "piso tres", "pisotres"
+            ],
+            "respuestas": [
+                "El Piso 3 cuenta con distintas áreas clínicas y administrativas. Consulta en el módulo de información del hospital para más detalles."
+            ]
+        },
+        {
+            "tag": "piso_4",
+            "preguntas": [
+                "piso 4",
+                "piso4", "piso cuatro", "pisocuatro"
+            ],
+            "respuestas": [
+                "En el Piso 4 se encuentran departamentos importantes para la atención médica. Dirígete al personal de información para recibir orientación exacta."
+            ]
+        },
+        {
+            "tag": "piso_5",
+            "preguntas": [
+                "piso 5",
+                "piso5", "piso cinco", "piso sinco", "pisocinco", "pisosinco"
+            ],
+            "respuestas": [
+                "El Piso 5 aloja unidades especializadas del hospital. Para saber qué áreas específicas están ahí, acude al área de información."
+            ]
+        },
+        {
+            "tag": "piso_6",
+            "preguntas": [
+                "piso 6",
+                "piso6", "piso seis", "piso ceis", "pisoseis", "pisoceis"
+            ],
+            "respuestas": [
+                "En el Piso 6 del hospital se encuentran algunas áreas especializadas y oficinas. Consulta en el módulo de información para recibir detalles específicos."
+            ]
+        },
+        {
+            "tag": "planta_baja",
+            "preguntas": [
+                "piso 0", "piso0", "piso cero", "piso zero", "piso sero", "pisocero", "pisozero", "pisosero",
+                "planta baja", "planta vaja", "plantabaja", "plantavaja",
+                "loby", "lobby", "lovy", "lovvy"
+            ],
+            "respuestas": [
+                "En la Planta Baja del hospital se encuentran áreas clave como la recepción, urgencias y módulos de información. Puedes acudir directamente ahí para recibir asistencia y orientación."
+            ]
+        },
+        {
+            "tag": "edificio_viejo",
+            "preguntas": [
+                "piso 7",
+                "piso7", "piso siete", "piso ciete", "pisosiete", "pisociete",
+                "edificio viejo", "edifisio viejo", "edificio biejo", "edifisio biejo",
+                "edificioviejo", "edifisioviejo", "edificiobiejo", "edifisiobiejo"
+            ],
+            "respuestas": [
+                "El Edificio Viejo del hospital alberga algunas áreas administrativas y servicios auxiliares. Te recomendamos preguntar en el módulo de información para saber exactamente qué departamentos se encuentran ahí."
+            ]
+        },
+        {
+            "tag": "especialidades",
+            "preguntas": [
+                "medicina", "medisina", "doctores", "doctor", "especialidad, especialidades, espesialidad, espesialidades, espescialidad",
+                "espescialidades, especilidad, especilidades, espelialidad, espelialidades",
+                "especialida, espesialida, espzialidad, espesiadades, espesiaelidad",
+                "especiabilidades, especialidaddes, espsecialidad, espesialidaz, espciadelidad",
+                "espesialidaz, espeshialidad, espashialidades, espeschialidades, especiallidaz",
+                "area", "areas", "servicios", "servicio", "lista",
+                "listas", "division", "divisiones", "divicion", "diviciones",
+                "pedia", "pediatria", "alergologia", "alergias", "cardiovascular",
+                "cardiobascular", "cirugia cardiovascular", "cirugia general", "cirugia plastica", "clinica de obesidad",
+                "obesidad", "comunicacion humana", "consulta de urgencias", "hermatologia", "endocrinologia",
+                "foniatria y audiologia", "foniatria audiologia", "foniatria", "audiologia", "hematologia",
+                "gia", "medicina fisica", "rehabilitacion", "reabilitacion", "nefrologia",
+                "nefro", "neumologia", "neumologo", "neomo", "neurologia",
+                "neurologo", "neuro", "neurocirugia", "oftalmologia", "oftalmologo",
+                "otorrinolaringologia", "psicologia", "psicologo", "traumatologia", "ortopedia",
+                "urologia", "urologo", "7038", "038", "38", "7038", "039", "39", "7107", "107",
+
+                "rolando",
+                "bazua",
+                "jorge rolando",
+                "rolando jorge",
+                "jorge romero",
+                "rolando romero",
+                "jorge bazua",
+                "rolando bazua",
+                "romero bazua",
+                "bazua romero",
+                "jorge rolando romero",
+                "jorge rolando bazua",
+                "rolando romero bazua",
+                "jorge romero bazua",
+                "jorge rolando romero bazua",
+                "romero bazua jorge rolando",
+                "dr jorge rolando romero bazua",
+                "doctor jorge rolando romero", 
+
+                "shery",
+                "morachis",
+                "shery guadalupe",
+                "guadalupe shery",
+                "shery avendano",
+                "guadalupe avendano",
+                "shery morachis",
+                "guadalupe morachis",
+                "avendano morachis",
+                "morachis avendano",
+                "shery guadalupe avendano",
+                "shery guadalupe morachis",
+                "guadalupe avendano morachis",
+                "shery avendano morachis",
+                "shery guadalupe avendano morachis",
+                "avendano morachis shery guadalupe",
+                "enf shery guadalupe avendano morachis",
+                "enfermera shery guadalupe avendano"
+            ],
+            "respuestas": [
+                "<b>Especialidades</b> \nAqui se brinda atención médica en diversas ramas de la pediatría, permitiendo el diagnóstico y tratamiento especializado de distintas condiciones."
+            ]
+        }
+    ]
+}
